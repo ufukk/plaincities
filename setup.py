@@ -10,7 +10,7 @@ setup(
   author='Ufuk Kocolu',
   author_email='ufuk.kocolu@proton.me',      
   url='https://github.com/ufukk/plaincities',   
-  download_url='https://github.com/ufukk/plaincities/archives/latest.tar.gz',
+  download_url='https://github.com/ufukk/plaincities/archive/refs/tags/v0.0.3.tar.gz',
   keywords=['locations', 'cities', 'places'],
   install_requires=[],
 
