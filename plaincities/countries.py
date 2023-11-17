@@ -1,10 +1,12 @@
-from importlib import import_module
-from typing import List, Dict, Iterable, Generator, TypeVar, Generic, Callable
+from importlib.util import spec_from_file_location, module_from_spec
+from importlib.abc import Loader
 from zoneinfo import ZoneInfo
 from difflib import SequenceMatcher
-from .values.constants import default_language, available_languages, timezone_names
+import os
+from typing import List, Dict, Iterable, Generator, TypeVar, Generic, Callable
+from pathlib import Path
 
-__PACKAGE_NAME__ = 'plaincities'
+__VALUE_PATH__ = os.path.dirname(os.path.abspath(__file__)) + '/_values'
 
 T = TypeVar('T')
 
@@ -128,6 +130,18 @@ class District(NamedItem):
         return self.__cities
 
 
+def _load_value_file(name, path=None):
+    path = path or __VALUE_PATH__
+    spec = spec_from_file_location(name, f'{path}/{name}.py')
+    module = module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+def _load_constants():
+    return _load_value_file('constants')
+
+constants = _load_constants()
+
 class Country(NamedItem, Container):
 
     def __init__(self, name, alpha2, alpha3, fips, continent) -> None:
@@ -140,11 +154,12 @@ class Country(NamedItem, Container):
         self.districts: Container[District] = None
         self.cities: Container[City] = None
 
-    def load_cities(self, language=None):
-        language = language or default_language
+    def load_cities(self, language=None, path=None):
+        language = language or constants.default_language
+        timezone_names = constants.timezone_names
         if self.cities is None:
             self.cities = Container()
-            values: CityValueFile = import_module(f'.values.{language}.{self.alpha2}_{language}', __PACKAGE_NAME__)
+            values: CityValueFile = _load_value_file(f'{language}/{self.alpha2}_{language}', path)
             states = {}
             districts = {}
             for key, value in values.states.items():
@@ -172,23 +187,24 @@ class Country(NamedItem, Container):
 
 class Countries(Container):
     
-    def __init__(self, language=None, load_all=False, countries_to_load:Iterable[str]=None, continents_to_load:Iterable[str]=None) -> None:
-        language = language or default_language
+    def __init__(self, language=None, load_all=False, countries_to_load:Iterable[str]=None, continents_to_load:Iterable[str]=None, path:str=None) -> None:
+        language = language or constants.default_language
         countries_to_load = countries_to_load or []
         continents_to_load = continents_to_load or []
         self.__instances: Dict[int, Country] = {}
         self.__values: CountryValueFile = None
+        self.__path = path
         self.__load_countries(language, load_all, countries_to_load, continents_to_load)
 
     def __load_countries(self, language, load_all, countries_to_load, continents_to_load):
         if not self.__values:
-            self.__values: CountryValueFile = import_module(f'.values.{language}.countries_{language}', __PACKAGE_NAME__)
+            self.__values: CountryValueFile = _load_value_file(f'{language}/countries_{language}', self.__path)
             for i, name in enumerate(self.__values.names):
                 country = Country(name, self.__values.alpha2_codes[i], self.__values.alpha3_codes[i], self.__values.fips_codes[i], self.__continent_for(i, self.__values.continent_indexes))
                 self.__instances[i] = country
                 if load_all or self.__values.alpha2_codes[i] in countries_to_load\
                     or country.continent in continents_to_load:
-                    country.load_cities()
+                    country.load_cities(path=self.__path)
 
     def __index_for(self, key: str | int) -> int | None:
         if isinstance(key, str):

@@ -1,6 +1,7 @@
 import unittest
 import sys
 import os
+from datetime import datetime
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -84,6 +85,14 @@ class PlainCitiesTestCase(unittest.TestCase):
         moscow = russia.cities['Moscow']
         self.assertGreater(moscow.population, 1000000)
         self.assertGreater(moscow.population, kaliningrad.population)
+
+    def test_timezones(self):
+        countries = Countries(countries_to_load=['US', 'JP'])
+        usa = countries['US']
+        japan = countries['JP']
+        ny_time = datetime(2010, 1, 1, 0, 0, 0, tzinfo=usa.cities['New York'].timezone)
+        tokyo_time = datetime(2010, 1, 1, 0, 0, 0, tzinfo=japan.cities['Tokyo'].timezone)
+        self.assertEqual((tokyo_time - ny_time).total_seconds(), 60 * 60 * -14)
 
     def test_city_name_suggestions(self):
         countries = Countries(countries_to_load=['TR', 'GR'])

@@ -189,7 +189,6 @@ class AlternateNamesReader:
 
 class Generator:
 
-    default_language = 'en'
     alternate_names_file = 'alternateNamesV2.txt'
     countries_file = 'countryInfo.txt'
     states_file = 'admin1CodesASCII.txt'
@@ -225,6 +224,10 @@ class Generator:
                 country = CountryRow.from_row(row)
                 codes.append(country.alpha2)
             return sorted(codes) 
+
+    def generate_package(self):
+        with open(self.output_path / '__init__.py', 'w'):
+            pass
 
     def generate_countries(self, lang):
         def _generate_continent_indexes(countries: List[CountryRow]):
@@ -286,14 +289,10 @@ class Generator:
                                     self.timezone_names))
 
 
-    def generate_values(self, city_file: str, languages: Iterable[str]):
+    def generate_values(self, city_file: str, languages: Iterable[str], default_language):
+        self.generate_package()
         self.name_reader.ensure_names()
         for lang in languages:
             self.generate_countries(lang)
             self.generate_cities(city_file, lang)
-        write_constants(self.output_path / 'constants.py', self.default_language, languages, self.timezone_names)
-
-
-if __name__ == '__main__':
-    languages = ['en', 'tr', 'fr', 'es', 'zh', 'ru', 'ar']
-    Generator('data', 'plaincities/values').generate_values('cities15000.txt', languages)
+        write_constants(self.output_path / 'constants.py', default_language, languages, self.timezone_names)

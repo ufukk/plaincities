@@ -91,7 +91,19 @@ You can setup additional languages after the installation.
 .. code-block:: python
 
     from plaincities import generator
-    Generator('data', 'plaincities/values').generate_values('cities15000.txt', ['kr'])
+    Generator('data', 'new_values').generate_values('cities15000.txt', ['ko'], 'ko')
+
+.. code-block:: python
+
+    sys.path.insert(0, 'new_values')
+    from plaincities import Countries
+    thailand = countries['TH']
+    thailand.name
+
+.. code-block:: text
+
+   '태국'
+
 
 Contact:
 --------
