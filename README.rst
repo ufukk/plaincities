@@ -23,8 +23,11 @@ All countries are loaded after initialization but city data has to be loaded exp
     india.load_cities()
     kerala = india.states['Kerala']
     kochi = kerala.cities['Kochi']
-    print(kochi.latitude, kochi.longitude)
+    (kochi.latitude, kochi.longitude)
 
+.. code-block:: text
+
+   ('9.93988', '76.26022')
 
 You can also load cities during initialization:
 
@@ -35,6 +38,12 @@ You can also load cities during initialization:
     mexico = countries['MX']
     mexico.load_cities()
     merida = mexico.cities['Mérida']
+    merida.timezone.key
+
+.. code-block:: text
+
+   'America/Merida'
+
 
 or load by continent:
 
@@ -51,7 +60,9 @@ or load all the cities on the globe!
     countries = Countries(load_all=True)
 
 
+
 Switching languages:
+====================
 
 .. code-block:: python
 
@@ -95,8 +106,8 @@ You can setup additional languages after the installation.
 
 .. code-block:: python
 
-    sys.path.insert(0, 'new_values')
     from plaincities import Countries
+    countries = Countries(countries_to_load=['TH'], path='new_values')
     thailand = countries['TH']
     thailand.name
 
