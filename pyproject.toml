@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "plaincities"
+version = "0.3"
+description = "plaincities is a library of places in many languages."
+authors = ["ufuk k. <ufuk.kocolu@proton.me>"]
+license = "LICENSE"
+readme = "README.rst"
+packages = [
+    {include = "plaincities", from = "src"} 
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
