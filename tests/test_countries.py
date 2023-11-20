@@ -124,5 +124,11 @@ class PlainCitiesTestCase(unittest.TestCase):
         self.assertEqual(lebanon.name, 'لبنان')
         self.assertIn('بيروت', lebanon.cities)
 
+    def test_neighbours(self):
+        countries = Countries(language='en', countries_to_load=['DZ'])
+        algeria = countries['DZ']
+        algiers = algeria.cities['Algiers']
+        self.assertEqual(len(algeria.neighbours(algiers)), 4)
+
 if __name__ == '__main__':
     unittest.main()

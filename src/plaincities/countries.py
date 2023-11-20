@@ -4,7 +4,7 @@ from zoneinfo import ZoneInfo
 from difflib import SequenceMatcher
 import os
 from typing import List, Dict, Iterable, Generator, TypeVar, Generic, Callable
-from pathlib import Path
+from math import asin, sin, cos, radians
 
 __VALUE_PATH__ = os.path.dirname(os.path.abspath(__file__)) + '/_values'
 
@@ -129,6 +129,16 @@ class District(NamedItem):
     def cities(self) -> Container[City]:
         return self.__cities
 
+R = 6371008.7714
+
+def haversine_distance(lat_1, lon_1, lat_2, lon_2):
+    lat_1 = radians(lat_1)
+    lon_1 = radians(lon_1)
+    lat_2 = radians(lat_2)
+    lon_2 = radians(lon_2)
+    return 2 * R * (asin((sin((lat_2 - lat_1) / 2) ** 2 + \
+                               cos(lat_1) * cos(lat_2) * \
+                               sin((lon_2 - lon_1) / 2) ** 2) ** 0.5))
 
 def _load_value_file(name, path=None):
     path = path or __VALUE_PATH__
@@ -185,6 +195,43 @@ class Country(NamedItem, Container):
 
     def __contains__(self, key: str):
         return key in self.states
+
+    def neighbours(self, city: City):
+        cities = sorted(self.cities, key=lambda a: (a.latitude, a.longitude))
+        threshold = 100 * 1000
+        northern_neighbour, southern_neighbour, eastern_neighbour, western_neighbour = None, None, None, None
+        index = cities.index(city)
+        start = index - 10 if index > 10 else 0
+        end = index + 10 if len(cities) > index + 10 else len(cities) - index
+        for item in cities[start:end]:
+            distance = haversine_distance(item.latitude, item.longitude, city.latitude, city.longitude)
+            if item.latitude > city.latitude and distance < threshold:
+                if not northern_neighbour or northern_neighbour[0] > distance:
+                    if (distance, item, ) not in [southern_neighbour, eastern_neighbour, western_neighbour]:
+                        northern_neighbour = (distance, item, )
+            if item.latitude < city.latitude and distance < threshold:
+                if not southern_neighbour or southern_neighbour[0] > distance:
+                    if (distance, item, ) not in [northern_neighbour, eastern_neighbour, western_neighbour]:
+                        southern_neighbour = (distance, item, )
+            if item.longitude < city.longitude and distance < threshold:
+                if not western_neighbour or western_neighbour[0] > distance:
+                    if (distance, item, ) not in [northern_neighbour, southern_neighbour, eastern_neighbour]:
+                        western_neighbour = (distance, item, )
+            if item.longitude > city.longitude and distance < threshold:
+                if not eastern_neighbour or eastern_neighbour[0] > distance:
+                    if (distance, item, ) not in [northern_neighbour, southern_neighbour, western_neighbour]:
+                        eastern_neighbour = (distance, item, )
+        results = []
+        if northern_neighbour:
+            results.append(northern_neighbour)
+        if southern_neighbour:
+            results.append(southern_neighbour)
+        if western_neighbour:
+            results.append(western_neighbour)
+        if eastern_neighbour:
+            results.append(eastern_neighbour)
+        return results
+
 
 class Countries(Container):
     

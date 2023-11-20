@@ -4,35 +4,114 @@ from typing import List, Iterable, Dict
 from pathlib import Path
 import pickle
 
-class NameRow:
+def report(msg: str, end='\n'):
+    print(msg, end=end)
+
+def skip_comments(gen):
+    for row in gen:
+        if not row[0].startswith('#'):
+            yield row
+
+def dump(obj):
+    return json.dumps(obj, ensure_ascii=False)
+
+def parent_code(*args):
+    return '.'.join([a for a in args if a is not None and len(a)])
+
+class NameFactory:
 
     @classmethod
     def from_row(cls, row: List[str]) -> "NameRow":
-        _, id_, lang, name = row[0:4]
-        return NameRow(int(id_), lang, name)
+        values = {
+            'id_': int(row[1]),
+            'lang_code': row[2],
+            'name': row[3],
+            'is_preferred': row[4].strip() == '1'
+        }
+        return NameRow(**values)
 
-    def __init__(self, id_, lang_code, name) -> None:
+class CountryFactory:
+
+    @classmethod
+    def from_row(cls, row: List[str]) -> "CountryRow":
+        values = {
+            'id_': int(row[16]),
+            'alpha2': row[0],
+            'alpha3': row[1],
+            'fips': int(row[2]),
+            'name': row[4],
+            'capital': row[5],
+            'area_sqm2': row[6],
+            'population': row[7],
+            'continent': row[8],
+            'currency': row[10],
+            'languages': row[15]
+        }
+        return CountryRow(**values)
+
+class CityFactory:
+
+    @classmethod
+    def from_row(cls, row: List[str]) -> "CityRow":
+        values = {
+            'id_': int(row[0]),
+            'name': row[1],
+            'ascii_name': row[2], 
+            'alternate_names': row[3].split(','), 
+            'latitude': float(row[4]), 
+            'longitude': float(row[5]),
+            'country_code': row[8],
+            'admin1code': row[10],
+            'admin2code': row[11],
+            'admin3code': row[12],
+            'population': int(row[14]),
+            'altitude': row[15],
+            'timezone': row[17],
+            'dem': int(row[16]),
+            'feature_class': row[6],
+            'feature_code': row[7]
+        }
+        values['ascii_name'] = 0 if values['ascii_name'] == values['name'] else values['ascii_name']
+        values['parent_code'] = parent_code(values['country_code'], values['admin1code'], values['admin2code'])
+        return CityRow(**values)
+
+class AdminCodeFactory:
+
+    @classmethod
+    def from_row(cls, row: List[str]) -> "AdminCodeRow":
+        values = {'id_': int(row[3]),
+                  'code': row[0],
+                  'name': row[1],
+                  'ascii_name': row[2]
+        }
+        values['country_code'] = values['code'][0:2]
+        return AdminCodeRow(**values)
+
+class NameRow:
+
+    def __init__(self, id_, lang_code, name, is_preferred) -> None:
         self.id_ = id_
         self.lang_code = lang_code
         self.name = name
+        self.is_preferred = is_preferred
 
     def __str__(self):
         return f'{self.id_}, {self.lang_code}, {self.name}'
 
 class CountryRow:
     
-    def __init__(self, id_, name, alpha2, alpha3, fips, continent) -> None:
+    def __init__(self, id_, name, alpha2, alpha3, fips, capital, continent, area_sqm2, population, currency, languages) -> None:
         self.id_ = id_
         self.name = name
         self.alpha2 = alpha2
         self.alpha3 = alpha3
         self.fips = fips
+        self.capital = capital
+        self.area_sqm2 = area_sqm2
         self.continent = continent
-
-    @classmethod
-    def from_row(cls, row: List[str]) -> "CountryRow":
-        alpha2, alpha3, fips, _, name, capital, area_sqm2, population, continent, tld, currency, currency_name, phone_code, postal_code_format, postal_code_regex, languages, id_ = row[0:17]
-        return CountryRow(int(id_), name, alpha2, alpha3, int(fips), continent)
+        self.population = population
+        self.languages = languages
+        self.currency = currency
 
     def update(self, names: List[NameRow]):
         if len(names):
@@ -40,10 +119,10 @@ class CountryRow:
 
 class CityRow:
 
-    def __init__(self, id_, name, asciiname, alternate_names, latitude, longitude, country_code, admin1code, admin2code, admin3code, population, timezone, altitude, parent_code) -> None:
+    def __init__(self, id_, name, ascii_name, alternate_names, latitude, longitude, country_code, admin1code, admin2code, admin3code, population, dem, feature_class, feature_code, timezone, altitude, parent_code) -> None:
         self.id_ = id_
         self.name = name
-        self.asciiname = asciiname
+        self.ascii_name = ascii_name
         self.alternate_names = alternate_names
         self.latitude = latitude
         self.longitude = longitude
@@ -52,21 +131,12 @@ class CityRow:
         self.admin2code = admin2code
         self.admin3code = admin3code
         self.population = population
+        self.dem = dem
+        self.feature_class = feature_class
+        self.feature_code = feature_code
         self.timezone = timezone
         self.altitude = altitude
         self.parent_code = parent_code
-
-    @classmethod
-    def from_row(cls, row: List[str]) -> "CityRow":
-        id_, name, asciiname, alternate_names, latitude, longitude, country_code, admin1code, admin2code, admin3code, population, altitude, timezone\
-            = row[0], row[1], row[2], row[3].split(','), row[4], row[5], row[8], row[10], row[11], row[12], row[14], row[15], row[17]
-        population = int(population)
-        latitude = float(latitude)
-        longitude = float(longitude)
-        altitude = int(altitude) if altitude else -1
-        parent = parent_code(country_code, admin1code, admin2code)
-        asciiname = 0 if asciiname == name else asciiname
-        return CityRow(int(id_), name, asciiname, alternate_names, latitude, longitude, country_code, admin1code, admin2code, admin3code, population, timezone, altitude, parent)
 
     def __str__(self, format=None):
         return f'<{self.id_}>: {self.name}'
@@ -79,12 +149,6 @@ class CityRow:
         
 class AdminCodeRow:
 
-    @classmethod
-    def from_row(cls, row: List[str]) -> "AdminCodeRow":
-        code, name, ascii_name, id_ = row[0:4]
-        country_code = code[0:2]
-        return AdminCodeRow(code, name, ascii_name, country_code, int(id_))
-
     def __init__(self, code, name, ascii_name, country_code, id_) -> None:
         self.code = code
         self.name = name
@@ -96,16 +160,6 @@ class AdminCodeRow:
         if len(names):
             self.name = names[0].name
 
-def skip_comments(gen):
-    for row in gen:
-        if not row[0].startswith('#'):
-            yield row
-
-def dump(obj):
-    return json.dumps(obj, ensure_ascii=False)
-
-def parent_code(*args):
-    return '.'.join([a for a in args if a is not None and len(a)])
 
 def country_template(country_rows: List[CountryRow], continent_indexes):
     return f"""ids = {dump([x.id_ for x in country_rows])}
@@ -119,7 +173,7 @@ continent_indexes = {dump(continent_indexes)}
 def city_template(all_cities: List[CityRow], states: Dict[str, AdminCodeRow], districts: Dict[str, AdminCodeRow], timezone_names: List[str]):
     return f"""ids = {dump([n.id_ for n in all_cities])}
 names = {dump([n.name for n in all_cities])}
-ascii_names = {dump([n.asciiname for n in all_cities])}    
+ascii_names = {dump([n.ascii_name for n in all_cities])}    
 positions = {dump([(n.latitude, n.longitude) for n in all_cities])}
 alternate_names = {dump([n.alternate_names for n in all_cities])}
 timezones = {dump([timezone_names.index(n.timezone) for n in all_cities])}
@@ -136,9 +190,6 @@ def write_constants(output, default_lang, available_languages, timezones):
 available_languages = {dump(available_languages)}
 timezone_names = {dump(timezones)}
 """)
-
-def report(msg: str, end='\n'):
-    print(msg, end=end)
 
 class AlternateNamesReader:
 
@@ -173,13 +224,12 @@ class AlternateNamesReader:
             line = self.fp.readline()
             if not line:
                 break
-            _, id_, lang, name, _, _, _, _, _, _ = line.split('\t')
-            if not lang or lang == 'link':
+            name_row = NameFactory.from_row(line.split('\t'))
+            if not name_row.lang_code or name_row.lang_code == 'link':
                 continue
-            id_ = int(id_)
-            if id_ not in self.id_map:
-                self.id_map[id_] = []
-            self.id_map[id_].append(NameRow(id_, lang, name))
+            if name_row.id_ not in self.id_map:
+                self.id_map[name_row.id_] = []
+            self.id_map[name_row.id_].append(name_row)
             pos = round(self.fp.tell() / self.file_size, ndigits=2) * 100
             if last_pos != pos:
                 last_pos = pos
@@ -188,7 +238,8 @@ class AlternateNamesReader:
         self.save_cache_file()
 
     def read_names_for(self, place_id, selected_lang):
-        return [n for n in self.id_map[place_id] if n.lang_code == selected_lang] if place_id in self.id_map else []
+        names = [n for n in self.id_map[place_id] if n.lang_code == selected_lang] if place_id in self.id_map else []
+        return sorted(names, key=lambda a: (a.is_preferred, a.name), reverse=True)
 
 class Generator:
 
@@ -212,7 +263,7 @@ class Generator:
         with open(self.input_path / input, 'r') as fp:
             reader = csv.reader(fp, delimiter='\t')
             for row in skip_comments(reader):
-                admin_row = AdminCodeRow.from_row(row)
+                admin_row = AdminCodeFactory.from_row(row)
                 names = self.name_reader.read_names_for(admin_row.id_, lang)
                 admin_row.update(names)
                 countries[admin_row.country_code] = {} if admin_row.country_code not in countries else countries[admin_row.country_code]
@@ -224,7 +275,7 @@ class Generator:
             reader = csv.reader(fp, delimiter='\t')
             codes = []
             for row in skip_comments(reader):
-                country = CountryRow.from_row(row)
+                country = CountryFactory.from_row(row)
                 codes.append(country.alpha2)
             return sorted(codes) 
 
@@ -252,7 +303,7 @@ class Generator:
             reader = csv.reader(fp, delimiter='\t')
             countries = []
             for row in skip_comments(reader):
-                country = CountryRow.from_row(row)
+                country = CountryFactory.from_row(row)
                 names = self.name_reader.read_names_for(country.id_, lang)
                 country.update(names)
                 countries.append(country)
@@ -272,7 +323,7 @@ class Generator:
         with open(self.input_path / file, 'r') as fp:
             reader = csv.reader(fp, delimiter='\t')
             for row in skip_comments(reader):
-                city = CityRow.from_row(row)
+                city = CityFactory.from_row(row)
                 names = self.name_reader.read_names_for(city.id_, lang)
                 city.update(names)
                 if city.country_code not in cities:
@@ -299,3 +350,6 @@ class Generator:
             self.generate_countries(lang)
             self.generate_cities(city_file, lang)
         write_constants(self.output_path / 'constants.py', default_language, languages, self.timezone_names)
+
+if __name__ == '__main__':
+    Generator('../data', 'src/plaincities/_values').generate_values('cities15000.txt', ['ar', 'en', 'zh', 'fr', 'es', 'tr'], 'en')
