@@ -1,11 +1,11 @@
 ids = [2078127]
-names = ["The Settlement"]
+names = ["Flying Fish Cove"]
 ascii_names = [0]    
 positions = [[-10.42172, 105.67912]]
-alternate_names = [["Flying Fish Cove"]]
+alternate_names = [["The Settlement"]]
 timezones = [323]
 populations = [500]
-altitudes = [-1]
+altitudes = [""]
 parents = ["CX.00"]
 states = {}
 districts = {}

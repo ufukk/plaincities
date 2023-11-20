@@ -1,11 +1,11 @@
 ids = [2411585]
-names = ["محمية جبل طارق"]
+names = ["جبل طارق"]
 ascii_names = [0]    
 positions = [[36.14474, -5.35257]]
-alternate_names = [["جبل طارق"]]
+alternate_names = [["محمية جبل طارق"]]
 timezones = [278]
 populations = [26544]
-altitudes = [-1]
+altitudes = [""]
 parents = ["GI.00"]
 states = {}
 districts = {}
