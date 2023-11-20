@@ -125,9 +125,13 @@ class PlainCitiesTestCase(unittest.TestCase):
         self.assertIn('بيروت', lebanon.cities)
 
     def test_neighbours(self):
-        countries = Countries(language='en', countries_to_load=['DZ'])
+        countries = Countries(language='en', countries_to_load=['DZ', 'US', 'TR'])
         algeria = countries['DZ']
         algiers = algeria.cities['Algiers']
+        usa = countries['US']
+        turkiye = countries['TR']
+        ankara = turkiye.cities['Ankara']
+        new_york = usa.cities['New York']
         self.assertEqual(len(algeria.neighbours(algiers)), 4)
 
 if __name__ == '__main__':

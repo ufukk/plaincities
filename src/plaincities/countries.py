@@ -197,13 +197,17 @@ class Country(NamedItem, Container):
         return key in self.states
 
     def neighbours(self, city: City):
-        cities = sorted(self.cities, key=lambda a: (a.latitude, a.longitude))
         threshold = 100 * 1000
+        vertical_cities = sorted(self.cities, key=lambda a: (a.latitude, a.longitude))
+        horizontal_cities = sorted(self.cities, key=lambda a: (a.longitude, a.latitude))
         northern_neighbour, southern_neighbour, eastern_neighbour, western_neighbour = None, None, None, None
-        index = cities.index(city)
-        start = index - 10 if index > 10 else 0
-        end = index + 10 if len(cities) > index + 10 else len(cities) - index
-        for item in cities[start:end]:
+        vertical_index = vertical_cities.index(city)
+        horizontal_index = horizontal_cities.index(city)
+        vertical_start = vertical_index - 10 if vertical_index > 10 else 0
+        vertical_end = vertical_index + 10 if len(vertical_cities) > vertical_index + 10 else len(vertical_cities) - vertical_index
+        horizontal_start = horizontal_index - 10 if horizontal_index > 10 else 0
+        horizontal_end = horizontal_index + 10 if len(horizontal_cities) > horizontal_index + 10 else len(horizontal_index) - vertical_index
+        for item in vertical_cities[vertical_start:vertical_end]:
             distance = haversine_distance(item.latitude, item.longitude, city.latitude, city.longitude)
             if item.latitude > city.latitude and distance < threshold:
                 if not northern_neighbour or northern_neighbour[0] > distance:
@@ -213,6 +217,8 @@ class Country(NamedItem, Container):
                 if not southern_neighbour or southern_neighbour[0] > distance:
                     if (distance, item, ) not in [northern_neighbour, eastern_neighbour, western_neighbour]:
                         southern_neighbour = (distance, item, )
+        for item in horizontal_cities[horizontal_start:horizontal_end]:
+            distance = haversine_distance(item.latitude, item.longitude, city.latitude, city.longitude)
             if item.longitude < city.longitude and distance < threshold:
                 if not western_neighbour or western_neighbour[0] > distance:
                     if (distance, item, ) not in [northern_neighbour, southern_neighbour, eastern_neighbour]:
