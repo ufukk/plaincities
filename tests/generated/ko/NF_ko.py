@@ -1,0 +1,16 @@
+geoid_list = [2161314]
+name_list = ["킹스턴"]
+ascii_name_list = [0]
+alternate_names_list = [["Kingston", "Kingston pa Norfolkoya", "Kingston på Norfolkøya", "Kingstona", "Kingstonas", "Kingstono", "Kingstun", "Kinqston", "Pasjolak Kingstan", "jin si dui", "khing s tan", "kincutan", "kingseuteon", "kingstana", "kingusuton", "kynghstwn", "kyngstwn", "Кингстон", "Кингстън", "Кінгстон", "Пасёлак Кінгстан", "كينغستون", "کنگسٹن", "کینگستون", "किंग्स्टन", "கிங்சுடன்", "คิงส์ตัน", "კინგსტონი", "キングストン", "金斯敦", "킹스턴"]]
+latitude_list = [-29.05459]
+longitude_list = [167.96628]
+country_code_list = ["NF"]
+population_list = [880]
+dem_list = [71]
+timezone_list = [344]
+altitude_list = [-1]
+_feature_class_list = ["P"]
+_feature_code_list = ["PPLC"]
+_parent_code_list = ["NF.00"]
+_states = {}
+_districts = {}

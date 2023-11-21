@@ -1,0 +1,16 @@
+geoid_list = []
+name_list = []
+ascii_name_list = []
+alternate_names_list = []
+latitude_list = []
+longitude_list = []
+country_code_list = []
+population_list = []
+dem_list = []
+timezone_list = []
+altitude_list = []
+_feature_class_list = []
+_feature_code_list = []
+_parent_code_list = []
+_states = {}
+_districts = {}

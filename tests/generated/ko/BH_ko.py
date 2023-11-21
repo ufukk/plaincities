@@ -1,0 +1,16 @@
+geoid_list = [290104, 290187, 290215, 290247, 290269, 290332, 290340, 385038]
+name_list = ["Sitrah", "Madīnat ‘Īsá", "Jidd Ḩafş", "Madīnat Ḩamad", "Dār Kulayb", "Al Muharraq", "마나마", "Ar Rifā‘"]
+ascii_name_list = [0, "Madinat `Isa", "Jidd Hafs", "Madinat Hamad", "Dar Kulayb", 0, 0, "Ar Rifa'"]
+alternate_names_list = [["Sitra", "Sitrah", "sitrat", "strh", "strt", "sytrh", "Ситра", "סיטרה", "سترة", "ستره", "سترہ", "سِتْرَة"], ["Isa", "Isa Town", "Madinat `Isa", "Madīnat ‘Īsá", "Medinat Isa", "مَدِينَة عِيسَى"], ["Djidd Hafs", "Djidd Ḥafṣ", "Jadd Hafs", "Jid Hafs", "Jidd Hafs", "Jidd Ḩafş", "Judd Hafs", "Judd Ḩafş", "jid hafs", "جِدّ حَفْص"], ["Hamad Town", "Madinat Hamad", "Madīnat Ḩamad", "madinat hamad", "مَدِينَة حَمَد"], ["Dar Chulaib", "Dar Kulaib", "Dar Kulayb", "Dār Kulaib", "Dār Kulayb", "dar kulayb", "دَار كُلَيْب"], ["Al Muharrak", "Al Muharraq", "Al Muḩarraq", "Al'-Mukharrak", "Al-Muharrak", "Al-Muharraq", "Al-Muḥarrak", "Moharek", "Muharrak", "Muharraq", "Muharraq Town", "Muhurraq", "aalmuharaq", "al-Muharraq", "mhrq", "Аль-Мухаррак", "اَلْمُحَرَّق", "محرق"], ["Al Manama", "Al Manamah", "Al Manāma", "Al Manāmah", "Al-Manama", "Al-Manamah", "Al-Manāmah", "Maenamae", "Manaama", "Manam", "Manama", "Manamae", "Manamah", "Manameh", "Manamo", "Manáma", "Manāma", "Menama", "Mename", "Mänamä", "WGF", "aalmanamat", "almnamh", "almnamt", "mai na ma", "mai na mai", "manama", "mnamh", "mnamہ", "Μανάμα", "Манамæ", "Манама", "Մանամա", "מנאמה", "المنامة", "المنامه", "اَلْمَنَامَة", "منامه", "منامہ", "مەنامە", "मनामा", "মানামা", "ਮਨਾਮਾ", "ମାନାମା", "மனாமா", "മനാമ", "มานามา", "མ་ན་མ།", "მანამა", "ማናማ", "マナーマ", "麥納瑪", "麦纳麦", "마나마"], ["Ar Rifa", "Ar Rifa`", "Ar Rifā‘", "Riffa", "اَلرِّفَاع"]]
+latitude_list = [26.15472, 26.17361, 26.21861, 26.11528, 26.06861, 26.25722, 26.22787, 26.13]
+longitude_list = [50.62056, 50.54778, 50.54778, 50.50694, 50.50389, 50.61194, 50.58565, 50.555]
+country_code_list = ["BH", "BH", "BH", "BH", "BH", "BH", "BH", "BH"]
+population_list = [37657, 38090, 31735, 52718, 65466, 97458, 147074, 195606]
+dem_list = [5, 7, 6, 35, 10, 7, 12, 43]
+timezone_list = [176, 176, 176, 176, 176, 176, 176, 176]
+altitude_list = [-1, -1, -1, -1, -1, -1, -1, -1]
+_feature_class_list = ["P", "P", "P", "P", "P", "P", "P", "P"]
+_feature_code_list = ["PPL", "PPL", "PPL", "PPL", "PPL", "PPL", "PPLC", "PPL"]
+_parent_code_list = ["BH.16", "BH.17", "BH.16", "BH.19", "BH.17", "BH.15", "BH.16", "BH.17"]
+_states = {"BH.15": ["무하라크 주", "Muharraq", 290333], "BH.16": ["Manama", "Manama", 7090954], "BH.17": ["Southern Governorate", "Southern Governorate", 7090972], "BH.19": ["북부 주", "Northern", 7090974]}
+_districts = {}

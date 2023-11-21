@@ -1,0 +1,16 @@
+geoid_list = [3578069, 7266440]
+name_list = ["플리머스", "브레이즈"]
+ascii_name_list = [0, 0]
+alternate_names_list = [["Plimouth", "Plimut", "Plimutas", "Plimuto", "Plymouth", "Plymouth pa Montserrat", "Plymouth på Montserrat", "blymwth", "peullimeoseu", "phli math", "plymwt", "pu li mao si", "purimasu", "Πλίμουθ", "Плимут", "Плимът", "Плімут", "פלימות", "بليموث", "پلایماؤت، مانٹسریٹ", "پلی‌موث، مونتسرات", "พลิมัท", "პლიმუთი", "プリマス", "普利茅斯", "플리머스"], ["Brades Estate", "Bradeso", "Breidsas", "Breints", "Brejds", "Breyds", "Vjoska Brehjds", "be rds", "beuleijeu", "breidsi", "brydz", "bu lai ci", "bureizu", "pirate", "Μπρέιντς", "Брейдс", "Брејдс", "Вёска Брэйдс", "בראדס", "بریدز", "بریڈیس", "பிராதெ", "เบรดส์", "ბრეიდსი", "ブレイズ", "布莱兹", "브레이즈"]]
+latitude_list = [16.70555, 16.79183]
+longitude_list = [-62.21292, -62.21058]
+country_code_list = ["MS", "MS"]
+population_list = [0, 1000]
+dem_list = [77, 52]
+timezone_list = [130, 130]
+altitude_list = [-1, -1]
+_feature_class_list = ["P", "P"]
+_feature_code_list = ["PPLC", "PPLG"]
+_parent_code_list = ["MS.01", "MS.03"]
+_states = {"MS.03": ["Saint Peter", "Saint Peter", 3578039], "MS.02": ["Saint Georges", "Saint Georges", 3578044], "MS.01": ["Saint Anthony", "Saint Anthony", 3578045]}
+_districts = {}

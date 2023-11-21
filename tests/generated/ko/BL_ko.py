@@ -1,0 +1,16 @@
+geoid_list = [3579132]
+name_list = ["귀스타비아"]
+ascii_name_list = [0]
+alternate_names_list = [["구스타비아"]]
+latitude_list = [17.89618]
+longitude_list = [-62.84978]
+country_code_list = ["BL"]
+population_list = [5988]
+dem_list = [6]
+timezone_list = [151]
+altitude_list = [-1]
+_feature_class_list = ["P"]
+_feature_code_list = ["PPLC"]
+_parent_code_list = ["BL.00"]
+_states = {}
+_districts = {}

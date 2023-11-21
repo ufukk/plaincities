@@ -1,0 +1,16 @@
+geoid_list = [3578851]
+name_list = ["마리고"]
+ascii_name_list = [0]
+alternate_names_list = [["마리갓"]]
+latitude_list = [18.06819]
+longitude_list = [-63.08302]
+country_code_list = ["MF"]
+population_list = [5700]
+dem_list = [9]
+timezone_list = [120]
+altitude_list = [-1]
+_feature_class_list = ["P"]
+_feature_code_list = ["PPLC"]
+_parent_code_list = ["MF.00"]
+_states = {}
+_districts = {}

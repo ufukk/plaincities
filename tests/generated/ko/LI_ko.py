@@ -1,0 +1,16 @@
+geoid_list = [3042030]
+name_list = ["파두츠"]
+ascii_name_list = [0]
+alternate_names_list = [["Bantouz", "QVU", "Vaduc", "Vaducas", "Vaduz", "Vaduzo", "fadoutsu", "paducheu", "vadutsi", "wa dou zi", "Βαντούζ", "Вадуц", "פאדוץ", "ვადუცი", "ፋዱጽ", "ファドゥーツ", "瓦都茲", "파두츠"]]
+latitude_list = [47.14151]
+longitude_list = [9.52154]
+country_code_list = ["LI"]
+population_list = [5197]
+dem_list = [465]
+timezone_list = [314]
+altitude_list = [-1]
+_feature_class_list = ["P"]
+_feature_code_list = ["PPLC"]
+_parent_code_list = ["LI.11"]
+_states = {"LI.11": ["Vaduz", "Vaduz", 3042031], "LI.10": ["Triesenberg", "Triesenberg", 3042034], "LI.09": ["Triesen", "Triesen", 3042036], "LI.08": ["Schellenberg", "Schellenberg", 3042038], "LI.07": ["Schaan", "Schaan", 3042042], "LI.06": ["Ruggell", "Ruggell", 3042047], "LI.05": ["Planken", "Planken", 3042050], "LI.04": ["마우렌", "Mauren", 3042056], "LI.03": ["Gamprin", "Gamprin", 3042063], "LI.02": ["에셴", "Eschen", 3042069], "LI.01": ["Balzers", "Balzers", 3042074]}
+_districts = {}

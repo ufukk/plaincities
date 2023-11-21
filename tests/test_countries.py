@@ -94,6 +94,13 @@ class PlainCitiesTestCase(unittest.TestCase):
         tokyo_time = datetime(2010, 1, 1, 0, 0, 0, tzinfo=japan.cities['Tokyo'].timezone)
         self.assertEqual((tokyo_time - ny_time).total_seconds(), 60 * 60 * -14)
 
+    def test_capitals(self):
+        countries = Countries(countries_to_load=['AF', 'KZ', 'TZ', 'VE'])
+        self.assertEqual(countries['AF'].capital.name, 'Kabul')
+        self.assertEqual(countries['KZ'].capital.name, 'Astana')
+        self.assertEqual(countries['TZ'].capital.name, 'Dodoma')
+        self.assertEqual(countries['VE'].capital.name, 'Caracas')
+
     def test_city_name_suggestions(self):
         countries = Countries(countries_to_load=['TR', 'GR'])
         turkiye = countries['TR']

@@ -1,0 +1,16 @@
+geoid_list = [3370903]
+name_list = ["제임스타운"]
+ascii_name_list = [0]
+alternate_names_list = [["Ceymstaun", "Dzeimstauna", "Dzeimstaunas", "Dzejmstaun", "Dzhehjmstaun", "Dzhejmstaun", "Džeimstauna", "Džeimstaunas", "HLE", "Iacobopolis", "Jamestauno", "Jamestown", "Tzeimstaoun", "Zhejmstaun", "cems thawn", "jeimseutaun", "jemsata'una", "jemstavun", "jemuzutaun", "jyms tawn", "jymz ٹawn  synٹ ہlyna", "jymztawn  synt hlyna", "zhan mu si dui", "Ĵamestaŭno", "Τζέιμσταουν", "Џејмстаун", "Джеймстаун", "Джэймстаўн", "Жеймстаун", "גיימסטאון", "דזשיימסטאן", "جيمس تاون", "جیمز ٹاون، سینٹ ہلینا", "جیمزتاون، سینت هلینا", "جیمزٹاؤن", "جەیمستاون", "जेम्सटाउन", "ஜேம்ஸ்டவுன்", "เจมส์ทาวน์", "ჯეიმზტაუნი", "ジェームズタウン", "詹姆斯敦", "제임스타운"]]
+latitude_list = [-15.93872]
+longitude_list = [-5.71675]
+country_code_list = ["SH"]
+population_list = [637]
+dem_list = [426]
+timezone_list = [255]
+altitude_list = [10]
+_feature_class_list = ["P"]
+_feature_code_list = ["PPLC"]
+_parent_code_list = ["SH.02"]
+_states = {"SH.01": ["Ascension", "Ascension", 2411430], "SH.03": ["Tristan da Cunha", "Tristan da Cunha", 3370684], "SH.02": ["Saint Helena", "Saint Helena", 6930057]}
+_districts = {}

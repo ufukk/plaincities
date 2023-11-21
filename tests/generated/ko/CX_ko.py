@@ -1,0 +1,16 @@
+geoid_list = [2078127]
+name_list = ["플라잉피시코브"]
+ascii_name_list = [0]
+alternate_names_list = [["Flain-Fish-Kouv", "Flaing Fish Kouv", "Flajing Fish Kouv", "Flajing-Fish-Kouv", "Flayinq Fis Kouv", "Flayinq Fiş Kouv", "Flying Fish Cove", "Kampong", "The Settlement", "fala'iga fisa kova", "fei yu wan", "flay xing fich khof", "flayngh fysh kwf", "flayyng fsh kww", "peullaingpisikobeu", "phla'inga phisa kova", "pilaiyin pis kov", "plaing-pishi", "Флаинг Фиш Коув", "Флайинг-Фиш-Коув", "Флаін-Фіш-Коўв", "Флајинг Фиш Коув", "فلائینگ فش کوو", "فلاينغ فيش كوف", "फ्लाइंग फिश कोव", "ਫ਼ਲਾਇੰਗ ਫ਼ਿਸ਼ ਕੋਵ", "பிளையிங் பிஷ் கோவ்", "ฟลายอิงฟิชโคฟ", "ფლაინგ-ფიში", "フライング・フィッシュ・コーブ", "飞鱼湾", "플라잉피시코브"]]
+latitude_list = [-10.42172]
+longitude_list = [105.67912]
+country_code_list = ["CX"]
+population_list = [500]
+dem_list = [135]
+timezone_list = [323]
+altitude_list = [-1]
+_feature_class_list = ["P"]
+_feature_code_list = ["PPLC"]
+_parent_code_list = ["CX.00"]
+_states = {}
+_districts = {}

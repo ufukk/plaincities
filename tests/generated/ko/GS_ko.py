@@ -1,0 +1,16 @@
+geoid_list = [3426466]
+name_list = ["그리트비켄"]
+ascii_name_list = [0]
+alternate_names_list = [["Gritviken", "Griutvikenas", "Grjutviken", "Grutviken", "Grytviken", "Qryotviken", "geuliteubiken", "gritavikena", "grytwwyqn", "gu li de wei ken", "guritobiken", "krit wi khen", "Грутвикен", "Грутвікен", "Грютвикен", "Грютвікен", "גריטוויקן", "ग्रिटविकेन", "กริตวีเคน", "グリトビケン", "古利德維肯", "그리트비켄"]]
+latitude_list = [-54.28111]
+longitude_list = [-36.5092]
+country_code_list = ["GS"]
+population_list = [2]
+dem_list = [4]
+timezone_list = [254]
+altitude_list = [-1]
+_feature_class_list = ["P"]
+_feature_code_list = ["PPLC"]
+_parent_code_list = ["GS.00"]
+_states = {}
+_districts = {}
