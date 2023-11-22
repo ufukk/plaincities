@@ -5,12 +5,12 @@ from datetime import datetime
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from plaincities import Countries
+from plaincities import Globe, AD
 
 class PlainCitiesTestCase(unittest.TestCase):
 
     def test_country_select(self):
-        countries = Countries()
+        countries = Globe()
         
         self.assertIn('Yemen', countries)
         self.assertIn('Vietnam', countries)
@@ -31,7 +31,7 @@ class PlainCitiesTestCase(unittest.TestCase):
         self.assertEqual(countries['India'].continent, 'AS')
 
     def test_state_select(self):
-        countries = Countries()
+        countries = Globe()
         countries['IN'].load_cities()
         countries['CN'].load_cities()
         countries['IQ'].load_cities()
@@ -45,7 +45,7 @@ class PlainCitiesTestCase(unittest.TestCase):
         self.assertIn('Yucatan', countries['MX'].states)
 
     def test_city_select(self):
-        countries = Countries()
+        countries = Globe()
         germany = countries['DE']
         germany.load_cities()
         self.assertIn('Cologne District', germany.states['North Rhine-Westphalia'].districts)
@@ -65,16 +65,16 @@ class PlainCitiesTestCase(unittest.TestCase):
         self.assertIn('Baghdad', iraq.cities)
 
     def test_countries_load_options(self):
-        countries = Countries(countries_to_load=['IN'])
+        countries = Globe(countries_to_load=['IN'])
         self.assertIn('Kerala', countries['IN'].states)
-        countries = Countries(continents_to_load=['AF'])
+        countries = Globe(continents_to_load=['AF'])
         self.assertIn('Eastern Cape', countries['ZA'].states)
-        countries = Countries(load_all=True)
+        countries = Globe(load_all=True)
         self.assertIn('Bağcılar', countries['TR'].states['Istanbul'].cities)
         self.assertIn('Bagcilar', countries['TR'].states['Istanbul'].cities)
 
     def test_city_properties(self):
-        countries = Countries(countries_to_load=['CN', 'RU'])
+        countries = Globe(countries_to_load=['CN', 'RU'])
         china = countries['CN']
         guangzhou = china.cities['Guangzhou']
         xining = china.cities['Xining']
@@ -87,7 +87,7 @@ class PlainCitiesTestCase(unittest.TestCase):
         self.assertGreater(moscow.population, kaliningrad.population)
 
     def test_timezones(self):
-        countries = Countries(countries_to_load=['US', 'JP'])
+        countries = Globe(countries_to_load=['US', 'JP'])
         usa = countries['US']
         japan = countries['JP']
         ny_time = datetime(2010, 1, 1, 0, 0, 0, tzinfo=usa.cities['New York'].timezone)
@@ -95,14 +95,14 @@ class PlainCitiesTestCase(unittest.TestCase):
         self.assertEqual((tokyo_time - ny_time).total_seconds(), 60 * 60 * -14)
 
     def test_capitals(self):
-        countries = Countries(countries_to_load=['AF', 'KZ', 'TZ', 'VE'])
+        countries = Globe(countries_to_load=['AF', 'KZ', 'TZ', 'VE'])
         self.assertEqual(countries['AF'].capital.name, 'Kabul')
         self.assertEqual(countries['KZ'].capital.name, 'Astana')
         self.assertEqual(countries['TZ'].capital.name, 'Dodoma')
         self.assertEqual(countries['VE'].capital.name, 'Caracas')
 
     def test_city_name_suggestions(self):
-        countries = Countries(countries_to_load=['TR', 'GR'])
+        countries = Globe(countries_to_load=['TR', 'GR'])
         turkiye = countries['TR']
         greece = countries['GR']
         ankara_suggestions = list(turkiye.cities.suggest('nkara'))
@@ -111,35 +111,38 @@ class PlainCitiesTestCase(unittest.TestCase):
         self.assertIn('Thessaloniki', thessaloniki_suggestions)
 
     def test_filters(self):
-        countries = Countries(countries_to_load=['CU'])
+        countries = Globe(countries_to_load=['CU', 'TR'])
         cuba = countries['CU']
         large_cities = cuba.cities.filter(lambda x: x.population > 100000)
         self.assertIn(cuba.cities['Havana'], large_cities)
+        turkiye = countries['TR']
+        all_cities = list(turkiye.cities.filter(lambda x: x.admin_division == AD.City or x.admin_division == AD.Capital))
+        self.assertEqual(len(all_cities), 81)
 
     def test_languages(self):
-        countries = Countries(language='zh', countries_to_load=['CN'])
+        countries = Globe(language='zh', countries_to_load=['CN'])
         china = countries['CN']
         self.assertEqual(china.name, '中国')
         self.assertIn('北京', china.cities)
-        countries = Countries(language='tr', countries_to_load=['DE'])
+        countries = Globe(language='tr', countries_to_load=['DE'])
         germany = countries['DE']
         self.assertEqual(germany.name, 'Almanya')
         self.assertIn('Berlin', germany.cities)
         self.assertIn('Münih', germany.cities)
-        countries = Countries(language='ar', countries_to_load=['LB'])
+        countries = Globe(language='ar', countries_to_load=['LB'])
         lebanon = countries['LB']
         self.assertEqual(lebanon.name, 'لبنان')
         self.assertIn('بيروت', lebanon.cities)
 
     def test_neighbours(self):
-        countries = Countries(language='en', countries_to_load=['DZ', 'US', 'TR'])
+        countries = Globe(language='en', countries_to_load=['DZ', 'US', 'TR'])
         algeria = countries['DZ']
         algiers = algeria.cities['Algiers']
         usa = countries['US']
         turkiye = countries['TR']
         ankara = turkiye.cities['Ankara']
         new_york = usa.cities['New York']
-        self.assertEqual(len(algeria.neighbours(algiers)), 4)
+        self.assertEqual(len(usa.nearby_places(new_york, 20 * 1000, 10)), 10)
 
 if __name__ == '__main__':
     unittest.main()

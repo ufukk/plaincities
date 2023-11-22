@@ -3,7 +3,7 @@ from importlib.abc import Loader
 from zoneinfo import ZoneInfo
 from difflib import SequenceMatcher
 import os
-from typing import List, Dict, Iterable, Generator, TypeVar, Generic, Callable
+from typing import List, Dict, Iterable, Generator, TypeVar, Generic, Callable, Tuple
 from math import asin, sin, cos, radians
 from enum import Enum, StrEnum, auto
 
@@ -49,13 +49,13 @@ class Division:
 
 class ADCode(StrEnum):
 
-    PPLC = auto()
     PPL = auto()
     PPLA = auto()
     PPLA2 = auto()
     PPLA3 = auto()
     PPLA4 = auto()
     PPLA5 = auto()
+    PPLC = auto()
     PPLH = auto()
     PPLL = auto()
     PPLX = auto()
@@ -253,49 +253,28 @@ class Country(NamedItem, Container):
     def __contains__(self, key: str):
         return key in self.states
 
-    def neighbours(self, city: City):
-        threshold = 100 * 1000
+    def nearby_places(self, city: City, threshold: int, count: int) -> Tuple[City, float]:
         vertical_cities = sorted(self.cities, key=lambda a: (a.latitude, a.longitude))
         horizontal_cities = sorted(self.cities, key=lambda a: (a.longitude, a.latitude))
-        northern_neighbour, southern_neighbour, eastern_neighbour, western_neighbour = None, None, None, None
         vertical_index = vertical_cities.index(city)
         horizontal_index = horizontal_cities.index(city)
-        vertical_start = vertical_index - 10 if vertical_index > 10 else 0
-        vertical_end = vertical_index + 10 if len(vertical_cities) > vertical_index + 10 else len(vertical_cities) - vertical_index
-        horizontal_start = horizontal_index - 10 if horizontal_index > 10 else 0
-        horizontal_end = horizontal_index + 10 if len(horizontal_cities) > horizontal_index + 10 else len(horizontal_index) - vertical_index
-        for item in vertical_cities[vertical_start:vertical_end]:
-            distance = haversine_distance(item.latitude, item.longitude, city.latitude, city.longitude)
-            if item.latitude > city.latitude and distance < threshold:
-                if not northern_neighbour or northern_neighbour[0] > distance:
-                    if (distance, item, ) not in [southern_neighbour, eastern_neighbour, western_neighbour]:
-                        northern_neighbour = (distance, item, )
-            if item.latitude < city.latitude and distance < threshold:
-                if not southern_neighbour or southern_neighbour[0] > distance:
-                    if (distance, item, ) not in [northern_neighbour, eastern_neighbour, western_neighbour]:
-                        southern_neighbour = (distance, item, )
-        for item in horizontal_cities[horizontal_start:horizontal_end]:
-            distance = haversine_distance(item.latitude, item.longitude, city.latitude, city.longitude)
-            if item.longitude < city.longitude and distance < threshold:
-                if not western_neighbour or western_neighbour[0] > distance:
-                    if (distance, item, ) not in [northern_neighbour, southern_neighbour, eastern_neighbour]:
-                        western_neighbour = (distance, item, )
-            if item.longitude > city.longitude and distance < threshold:
-                if not eastern_neighbour or eastern_neighbour[0] > distance:
-                    if (distance, item, ) not in [northern_neighbour, southern_neighbour, western_neighbour]:
-                        eastern_neighbour = (distance, item, )
+        vertical_start = vertical_index - count if vertical_index > count else 0
+        vertical_end = vertical_index + count if len(vertical_cities) > vertical_index + count else len(vertical_cities) - vertical_index
+        horizontal_start = horizontal_index - count if horizontal_index > count else 0
+        horizontal_end = horizontal_index + count if len(horizontal_cities) > horizontal_index + count else len(horizontal_index) - vertical_index
         results = []
-        if northern_neighbour:
-            results.append(northern_neighbour)
-        if southern_neighbour:
-            results.append(southern_neighbour)
-        if western_neighbour:
-            results.append(western_neighbour)
-        if eastern_neighbour:
-            results.append(eastern_neighbour)
-        return results
+        max_distance = threshold + 1
+        items = set(vertical_cities[vertical_start:vertical_end] + horizontal_cities[horizontal_start:horizontal_end])
+        items.remove(city)
+        for item in items:
+            distance = haversine_distance(item.latitude, item.longitude, city.latitude, city.longitude)
+            if distance < threshold and (len(results) < count or distance < max_distance):
+                results.append((item, distance, ))
+                max_distance = max([x[1] for x in results])
+        results = sorted(results, key=lambda x: x[1])
+        return results[0:count]
 
-class Countries(Container):
+class Globe(Container):
     
     def __init__(self, language=None, load_all=False, countries_to_load:Iterable[str]=None, continents_to_load:Iterable[str]=None, path:str=None) -> None:
         constants = _load_constants()
