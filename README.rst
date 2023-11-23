@@ -108,7 +108,7 @@ Generating language files
 -------------------------
 
 Default installation supports English, Turkish, French, Spanish, Chinese, Russian and Arabic.
-If you need other languages, you need to download the following files from `geonames website <https://download.geonames.org/export/dump/readme.txt>`_ and put them into the same folder:
+If you need other languages, you need to download the following files from the `geonames website <https://download.geonames.org/export/dump/readme.txt>`_ and put them into the same folder:
 
     countryInfo.txt, alternateNamesv2.zip, admin1CodesASCII.txt, admin2Codes.txt, cities(N).zip
 
