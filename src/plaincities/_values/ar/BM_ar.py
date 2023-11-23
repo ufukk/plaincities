@@ -1,6 +1,6 @@
 geoid_list = [3573197]
 name_list = ["هاميلتون"]
-ascii_name_list = [0]
+ascii_name_list = ["Hamilton"]
 alternate_names_list = [["BDA", "Chamilton", "Gamil'tan", "Gamil'ton", "Hamilton", "Hamilton pa Bermuda", "Hamilton på Bermuda", "Hamiltonas", "Hamiltono", "Khamilton", "Khamiltun", "amiltan", "ha mi er dun", "haemilteon", "hamiruton", "hamyltwn", "hemiltana", "hmyltwn", "Χάμιλτον", "Гамильтон", "Гамільтан", "Гамільтон", "Хамилтон", "Хамилтън", "המילטון", "هاميلتون", "همیلتون", "ہیملٹن", "हॅमिल्टन", "ஆமில்டன்", "แฮมิลตัน", "ჰამილტონი", "ハミルトン", "哈密尔顿", "해밀턴"]]
 latitude_list = [32.2949]
 longitude_list = [-64.78303]

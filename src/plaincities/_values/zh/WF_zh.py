@@ -1,6 +1,6 @@
 geoid_list = [4034821]
 name_list = ["马塔乌图"]
-ascii_name_list = [0]
+ascii_name_list = ["Mata-Utu"]
 alternate_names_list = [["Mata Utu", "Mata'utu", "Mata-Outou", "Mata-Utu", "Matauto", "Matautu", "Matâutu", "Matāʻutu", "ma ta wu tu", "mata-atw", "mata-awtw", "mata-utu", "mata-xu tu", "matautou", "matautu", "Μάτα-Ούτου", "Мата-Уту", "ماتا-اتو", "ماتا-اوتو", "மாதா-உது", "มาตา-อูตู", "მატა-უტუ", "マタウトゥ", "马塔乌图", "마타우투"]]
 latitude_list = [-13.28163]
 longitude_list = [-176.17453]

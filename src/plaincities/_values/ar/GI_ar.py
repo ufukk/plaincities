@@ -1,6 +1,6 @@
 geoid_list = [2411585]
 name_list = ["جبل طارق"]
-ascii_name_list = [0]
+ascii_name_list = ["Gibraltar"]
 alternate_names_list = [["محمية جبل طارق"]]
 latitude_list = [36.14474]
 longitude_list = [-5.35257]

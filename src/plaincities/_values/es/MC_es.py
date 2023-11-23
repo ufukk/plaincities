@@ -1,6 +1,6 @@
 geoid_list = [2992741, 2993458]
 name_list = ["Montecarlo", "Mónaco"]
-ascii_name_list = [0, 0]
+ascii_name_list = ["Monte-Carlo", "Monaco"]
 alternate_names_list = [["Monte Carlo", "Monte Karlo", "Monte Karló", "Monte-Karlo", "Monte_Carlo", "Montecarlo", "XMM", "Монте-Карло"], ["MCM", "Monaco", "Monaco-Ville", "Monako", "Mònaco", "Mónaco", "Mónakó", "monako", "Μονακό", "Монако", "모나코"]]
 latitude_list = [43.73976, 43.73718]
 longitude_list = [7.42732, 7.42145]

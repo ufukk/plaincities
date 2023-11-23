@@ -1,6 +1,6 @@
 geoid_list = [289523, 289888, 289915, 289962, 290030]
 name_list = ["أُمّ صَلاَل مُحَمَّد", "الريان", "الوكرة", "الخور والدخيرة", "اَلدَّوْحَة"]
-ascii_name_list = ["Umm Salal Muhammad", "Ar Rayyan", 0, 0, 0]
+ascii_name_list = ["Umm Salal Muhammad", "Ar Rayyan", "Al Wakrah", "Al Khawr", "Doha"]
 alternate_names_list = [["أم صلال محمد"], ["Al Raiyan", "Al Rayyan", "Ar Rayyan", "Ar Rayyān", "Raiyan", "alryan", "ar-Rayyan", "الريان"], ["Al Wakrah", "Al Waqra", "Al Waqrah", "Wakra", "Wakrah", "Waqra", "alwkrt", "الوكرة"], ["الخور"], ["الدوحة"]]
 latitude_list = [25.41524, 25.29194, 25.17151, 25.68389, 25.28545]
 longitude_list = [51.40647, 51.42444, 51.60337, 51.50583, 51.53096]

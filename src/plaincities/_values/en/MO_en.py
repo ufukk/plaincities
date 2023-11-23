@@ -1,6 +1,6 @@
 geoid_list = [1821274]
 name_list = ["Macao"]
-ascii_name_list = [0]
+ascii_name_list = ["Macau"]
 alternate_names_list = [["Aomen", "Aomin'", "Au-mun", "Aumwnz", "Aumyn", "Cidade de Macau", "Cidade do Santo Nome de Deus de Macau", "MFM", "Ma Cao", "Macao", "Macau", "Macaum", "Makaa", "Makaaw", "Makao", "Makaou", "Makau", "Makaw", "Makawo", "Makaó", "Makee", "Makèë", "Màkáù", "O-muong", "ao men", "maka", "maka'o", "maka'u", "makao", "makavu", "makaw", "makayw", "makkavu", "mkaw", "Àu-mûn", "Ó̤-muòng", "Μακάου", "Аоминь", "Аумын", "Макаа", "Макао", "מקאו", "ئاۋمېن", "ماكاو", "ماکائو", "مکاؤ", "މަކާއޫ", "मकाउ", "मकाओ", "মাকাউ", "ਮਕਾਉ", "મકાઉ", "மக்காவு", "మకావు", "ಮಕಾವು", "മകൗ", "เขตบริหารพิเศษมาเก๊า", "မကာအို", "მაკაო", "マカオ", "澳門", "澳门", "마카오"]]
 latitude_list = [22.20056]
 longitude_list = [113.54611]

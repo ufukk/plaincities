@@ -1,6 +1,6 @@
 geoid_list = [5881576]
 name_list = ["باغو باغو"]
-ascii_name_list = [0]
+ascii_name_list = ["Pago Pago"]
 alternate_names_list = [["PPG", "Paga-Paga", "Pago Pago", "Pago-Pago", "PagoPago", "Pagopago", "Pagó Pagó", "Panko Panko", "Paqo Paqo", "baghw baghw", "pa guo pa guo", "pa ko pa ko", "pago pago", "pagopago", "pagw pagw", "pako pako", "pango pango", "Πάγκο Πάγκο", "Пага-Пага", "Паго Паго", "Паго-Паго", "Пагопаго", "Պագո Պագո", "פאגו פאגו", "باغو باغو", "پاگو پاگو", "पांगो पांगो", "பாகோ பாகோ", "ปาโกปาโก", "პაგო-პაგო", "パゴパゴ", "帕果帕果", "파고 파고", "파고파고"]]
 latitude_list = [-14.27806]
 longitude_list = [-170.7025]

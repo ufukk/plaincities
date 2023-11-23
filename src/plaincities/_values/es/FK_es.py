@@ -1,6 +1,6 @@
 geoid_list = [3426691]
 name_list = ["Puerto Argentino"]
-ascii_name_list = [0]
+ascii_name_list = ["Stanley"]
 alternate_names_list = [["Puerto Stanley"]]
 latitude_list = [-51.69382]
 longitude_list = [-57.85701]

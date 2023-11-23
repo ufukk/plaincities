@@ -1,6 +1,6 @@
 geoid_list = [330546, 333287, 342711, 343300, 343386, 344901]
 name_list = ["مصوع", "كرن", "بارنتو", "أسمرة", "عصب", "مندفرا"]
-ascii_name_list = [0, 0, 0, 0, 0, 0]
+ascii_name_list = ["Massawa", "Keren", "Barentu", "Asmara", "Assab", "Mendefera"]
 alternate_names_list = [["MIts'Iwwa", "MSW", "Macua", "Masaoua", "Masava", "Masawa", "Massaoua", "Massau", "Massaua", "Massava", "Massawa", "Massawah", "Massowa", "Massowah", "Maçuá", "Mesewa", "Mits'iwa", "Mitsewa", "Mitsiwa'e", "Mitsiwa’e", "Mits’iwa", "Mĭts’ĭwwa", "ma sa wa", "masaua", "masava", "masawa", "massawa", "mʼsʼwwh", "Μασάουα", "Массава", "Массауа", "מאסאווה", "מאסאווע", "مصوع", "मासावा", "მასაუა", "ምጽዋ", "ምጽዋዕ", "マッサワ", "马萨瓦", "마사와"], ["كَرَن"], ["Barehntu", "Barentu", "Mai Tsada", "barntw", "Барэнту", "بارنتو", "ባረንቱ"], ["ASM", "Asmar", "Asmara", "Asmaro", "Asmehra", "Asmera", "Aszmara", "a si ma la", "asamara", "aseumala", "asmara", "asmera", "asmrh", "asmrt", "asumara", "yەsmەrە", "Əsməra", "Ασμάρα", "Асмара", "Асмэра", "Асмєра", "Ասմարա", "אסמרה", "أسمرة", "ئەسمەرە", "اسمارا", "اسمره", "अस्मारा", "ਅਸਮਾਰਾ", "அஸ்மாரா", "അസ്മാറ", "แอสมารา", "ཨཱ་སི་མི་ར།", "ასმერა", "አስመራ", "ኣስመራ", "アスマラ", "阿斯馬拉", "아스마라"], ["ASA", "Aseb", "Assab", "Baia di Assab", "`Aseb", "a sa bu", "عصب", "ዓስብ", "‘Aseb", "阿萨布"], ["منديفيرا", "عدي أوغري"]]
 latitude_list = [15.60811, 15.77792, 15.10582, 15.33805, 13.00917, 14.88722]
 longitude_list = [39.47455, 38.45107, 37.59067, 38.93184, 42.73944, 38.81528]

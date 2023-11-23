@@ -1,6 +1,6 @@
 geoid_list = [4030723]
 name_list = ["亚当斯敦"]
-ascii_name_list = [0]
+ascii_name_list = ["Adamstown"]
 alternate_names_list = [["Adams Town", "Adamstaun", "Adamstaunas", "Adamstauno", "Adamstaŭno", "Adamstown", "Antamstaoun", "adamusutaun", "admztawn", "admztwn  pytkrn ayslnd", "aedeomseutaun", "atamstavun", "ya dang si dui", "Άνταμσταουν", "Адамстаун", "Адамстаўн", "אדמסטאון", "آدمزتاون", "ادمزتون، پیتکرن ایسلند", "ایڈمز ٹاؤن، جزائر پٹکیرن", "ॲडम्सटाउन", "ஆடம்ஸ்டவுன்", "แอดัมส์ทาวน์", "ადამსტაუნი", "アダムスタウン", "亚当斯敦", "애덤스타운"]]
 latitude_list = [-25.06597]
 longitude_list = [-130.10147]

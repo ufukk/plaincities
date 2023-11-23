@@ -1,6 +1,6 @@
 geoid_list = [4032402]
 name_list = ["Nuku'alofa"]
-ascii_name_list = ["Nuku'alofa"]
+ascii_name_list = [0]
 alternate_names_list = [["Niukalofa", "Noukoualopha", "Nucualofa", "Nukalofa", "Nuku'alofa", "Nuku`alofa", "Nuku`aloia", "Nukualofa", "Nukualofo", "Nukuʻalofa", "Nuku‘alofa", "Nuku‘aloia", "Nuku’alofa", "TBU", "nu ku a luo fa", "nu kuxalofa", "nukuallopa", "nukuarofa", "Νουκουαλόφα", "Нукуалофа", "נוקואלופה", "นูกูอะโลฟา", "ኑኩአሎፋ", "ヌクアロファ", "努库阿洛法", "努庫阿洛發", "누쿠알로파"]]
 latitude_list = [-21.13683]
 longitude_list = [-175.20114]

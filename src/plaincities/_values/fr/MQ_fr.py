@@ -1,6 +1,6 @@
 geoid_list = [3569915, 3569926, 3570412, 3570428, 3570429, 3570446, 3570675, 3570785]
 name_list = ["Saint-Joseph", "Bourg de Sainte Marie", "Le Robert", "Le Lamentin", "Le François", "La Trinité", "Fort-de-France", "Ducos"]
-ascii_name_list = [0, 0, 0, 0, "Le Francois", "La Trinite", 0, 0]
+ascii_name_list = [0, "Sainte-Marie", 0, 0, "Le Francois", "La Trinite", 0, 0]
 alternate_names_list = [["Saint-Joseph"], ["Bourg de Sainte Marie", "Sainte-Marie", "Sent-Mari", "Сент-Мари"], ["Le Rober", "Le Romper", "Le-Rober", "Robert", "lh rwbr", "lw rwbr", "Λε Ρομπέρ", "Ле Робер", "Ле-Робер", "לה רובר", "لو روبر"], ["Lamentin", "Le Lamanten", "Le Lamenten", "Le Lamentin", "Le-Lamanten", "lw lmwntn", "Λε Λαμεντέν", "Ле Ламантен", "Ле-Ламантен", "לה לאמנטין", "لو لمونتن"], ["Francois", "François", "Le Francois", "Le François", "Le-Fransua", "Ле-Франсуа"], ["La Trinite", "La Trinité", "Trinite", "Trinité"], ["Fort Royale"], ["Ducos"]]
 latitude_list = [14.67099, 14.78352, 14.67751, 14.61341, 14.61513, 14.73807, 14.60365, 14.57529]
 longitude_list = [-61.03905, -60.99227, -60.94228, -60.99964, -60.90311, -60.96319, -61.07418, -60.97453]

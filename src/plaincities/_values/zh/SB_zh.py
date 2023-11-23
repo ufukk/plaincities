@@ -1,6 +1,6 @@
 geoid_list = [2108502]
 name_list = ["霍尼亞拉"]
-ascii_name_list = [0]
+ascii_name_list = ["Honiara"]
 alternate_names_list = [["霍尼亚拉"]]
 latitude_list = [-9.43333]
 longitude_list = [159.95]

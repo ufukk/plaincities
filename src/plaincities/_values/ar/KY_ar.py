@@ -1,6 +1,6 @@
 geoid_list = [3580477, 3580661]
 name_list = ["West Bay", "جورج تاون"]
-ascii_name_list = [0, 0]
+ascii_name_list = [0, "George Town"]
 alternate_names_list = [["West Bay", "West End"], ["Corctaun", "Dzhordzh Taun", "Dzhordzhtaun", "Dzordz Taun", "Dzordztaun", "Dzordztaunas", "Džordžtaunas", "GCM", "George Town", "George Town pa Caymanoyane", "George Town på Caymanøyane", "Georgetown", "Georgurbo", "Georĝurbo", "Tzortz Taoun", "cxrc thawn", "gwrg tʼwn", "jarj tavun", "jojitaun", "jorjata'una", "jwrj tawn", "qiao zhi dui", "qiao zhi dun", "Τζωρτζ Τάουν", "Џорџ Таун", "Џорџтаун", "Джордж Таун", "Джорджтаун", "Джорджтаўн", "גורג טאון", "جارج ٹاؤن، جزائر کیمین", "جرج‌تاون، جزایر کیمن", "جورج تاون", "जॉर्जटाउन", "ஜார்ஜ் டவுன்", "จอร์จทาวน์", "ჯორჯტაუნი", "ジョージタウン", "喬治敦", "조지타운"]]
 latitude_list = [19.38197, 19.2866]
 longitude_list = [-81.39281, -81.37436]

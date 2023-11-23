@@ -1,6 +1,6 @@
 geoid_list = [3579925]
 name_list = ["St. George's"]
-ascii_name_list = [0]
+ascii_name_list = ["Saint George's"]
 alternate_names_list = [["Saint George's"]]
 latitude_list = [12.05288]
 longitude_list = [-61.75226]

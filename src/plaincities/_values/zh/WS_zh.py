@@ -1,6 +1,6 @@
 geoid_list = [4035413]
 name_list = ["阿皮亚"]
-ascii_name_list = [0]
+ascii_name_list = ["Apia"]
 alternate_names_list = [["APW", "Apia", "Apiae", "Apija", "Apio", "Apiya", "Apía", "a pi ya", "abya", "api'a", "apia", "apiya", "appiya", "apya", "xa pi xa", "΄Aπια", "Απία", "Апиæ", "Апиа", "Апия", "Апија", "Апіа", "Апія", "אפיה", "آپیا", "أبيا", "आपिया", "ਆਪੀਆ", "ஆப்பியா", "അപിയ", "อาปีอา", "ཨ་པི་ཡ།", "აპია", "አፒያ", "アピア", "阿皮亚", "阿皮亞", "아피아"]]
 latitude_list = [-13.83333]
 longitude_list = [-171.76666]

@@ -1,6 +1,6 @@
 geoid_list = [3168070]
 name_list = ["Ville de Saint-Marin"]
-ascii_name_list = [0]
+ascii_name_list = ["San Marino"]
 alternate_names_list = [["Saint-Marin"]]
 latitude_list = [43.93667]
 longitude_list = [12.44639]

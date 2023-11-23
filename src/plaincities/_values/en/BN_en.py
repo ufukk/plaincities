@@ -1,6 +1,6 @@
 geoid_list = [1820071, 1820187, 1820491, 1820906]
 name_list = ["Tutong", "Seria", "Kuala Belait", "Bruni"]
-ascii_name_list = [0, 0, 0, 0]
+ascii_name_list = [0, 0, 0, "Bandar Seri Begawan"]
 alternate_names_list = [["Pekan Tutong", "Tutong"], ["Seria", "Serija", "seria", "sex reiy", "Сериа", "Серия", "เซอเรีย", "セリア"], ["Belait", "KUB", "Kuala Belait", "Kuala-Belajt", "Kvala Belaitas", "Kwala Belait", "kuallabeullais", "kuaraburaito", "ma lai yi", "Куала-Белайт", "קואלה בלייט", "クアラブライト", "马来奕", "쿠알라블라잇"], ["Brunei Town", "Brunei", "Bandar Seri Begawan"]]
 latitude_list = [4.80278, 4.60637, 4.58361, 4.89035]
 longitude_list = [114.64917, 114.32476, 114.2312, 114.94006]

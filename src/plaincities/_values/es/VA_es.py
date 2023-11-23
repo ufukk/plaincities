@@ -1,6 +1,6 @@
 geoid_list = [6691831]
 name_list = ["Vaticano"]
-ascii_name_list = [0]
+ascii_name_list = ["Vatican City"]
 alternate_names_list = [["Ciudad del Vaticano"]]
 latitude_list = [41.90268]
 longitude_list = [12.45414]

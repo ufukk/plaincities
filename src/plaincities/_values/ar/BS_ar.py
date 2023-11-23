@@ -1,6 +1,6 @@
 geoid_list = [3571824, 3571971, 3572375]
 name_list = ["ناساو", "Lucaya", "Freeport"]
-ascii_name_list = [0, 0, 0]
+ascii_name_list = ["Nassau", 0, 0]
 alternate_names_list = [["City of Nassau", "NAS", "Nasau", "Nasauo", "Nasaŭo", "Naso", "Nassaou", "Nassau", "Nassau City", "Nassau pa Bahamas", "Nassau på Bahamas", "Nasáu", "na sao", "nasa'u", "nasau", "nasaw", "nasayw", "nasea", "naso", "nasso", "neco", "nsaw", "Νασσάου", "Насау", "Нассау", "Նասաու", "נסאו", "ناسائو", "ناساو", "نساؤ", "नासाउ", "নাসাউ", "ਨਸਾਊ", "நேசோ", "നാസോ", "แนสซอ", "ན་སའོ།", "ნასაუ", "ናሶ", "ナッソー", "拿騷", "拿骚", "나사우", "나소"], ["Lucaya"], ["FPO", "Freeport", "Freeport City", "Friport", "Фрипорт"]]
 latitude_list = [25.05823, 26.53333, 26.53333]
 longitude_list = [-77.34306, -78.66667, -78.7]

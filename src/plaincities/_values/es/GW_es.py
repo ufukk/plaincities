@@ -1,6 +1,6 @@
 geoid_list = [2374775, 2375254]
 name_list = ["Bisáu", "Bafatá"]
-ascii_name_list = [0, "Bafata"]
+ascii_name_list = ["Bissau", "Bafata"]
 alternate_names_list = [["Bissau"], ["Bafata", "Bafatá"]]
 latitude_list = [11.86357, 12.16583]
 longitude_list = [-15.59767, -14.66167]

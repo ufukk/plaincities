@@ -1,6 +1,6 @@
 geoid_list = [3426466]
 name_list = ["古利德維肯"]
-ascii_name_list = [0]
+ascii_name_list = ["Grytviken"]
 alternate_names_list = [["Gritviken", "Griutvikenas", "Grjutviken", "Grutviken", "Grytviken", "Qryotviken", "geuliteubiken", "gritavikena", "grytwwyqn", "gu li de wei ken", "guritobiken", "krit wi khen", "Грутвикен", "Грутвікен", "Грютвикен", "Грютвікен", "גריטוויקן", "ग्रिटविकेन", "กริตวีเคน", "グリトビケン", "古利德維肯", "그리트비켄"]]
 latitude_list = [-54.28111]
 longitude_list = [-36.5092]

@@ -1,6 +1,6 @@
 geoid_list = [3370903]
 name_list = ["詹姆斯敦"]
-ascii_name_list = [0]
+ascii_name_list = ["Jamestown"]
 alternate_names_list = [["Ceymstaun", "Dzeimstauna", "Dzeimstaunas", "Dzejmstaun", "Dzhehjmstaun", "Dzhejmstaun", "Džeimstauna", "Džeimstaunas", "HLE", "Iacobopolis", "Jamestauno", "Jamestown", "Tzeimstaoun", "Zhejmstaun", "cems thawn", "jeimseutaun", "jemsata'una", "jemstavun", "jemuzutaun", "jyms tawn", "jymz ٹawn  synٹ ہlyna", "jymztawn  synt hlyna", "zhan mu si dui", "Ĵamestaŭno", "Τζέιμσταουν", "Џејмстаун", "Джеймстаун", "Джэймстаўн", "Жеймстаун", "גיימסטאון", "דזשיימסטאן", "جيمس تاون", "جیمز ٹاون، سینٹ ہلینا", "جیمزتاون، سینت هلینا", "جیمزٹاؤن", "جەیمستاون", "जेम्सटाउन", "ஜேம்ஸ்டவுன்", "เจมส์ทาวน์", "ჯეიმზტაუნი", "ジェームズタウン", "詹姆斯敦", "제임스타운"]]
 latitude_list = [-15.93872]
 longitude_list = [-5.71675]

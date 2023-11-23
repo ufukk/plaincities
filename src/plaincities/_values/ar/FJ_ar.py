@@ -1,6 +1,6 @@
 geoid_list = [2198148, 2198365, 2202064, 2204506, 2204582, 8740209]
 name_list = ["سوفا", "Sigatoka", "نادي", "لاوتوكا", "Labasa", "Nasinu"]
-ascii_name_list = [0, 0, 0, 0, 0, 0]
+ascii_name_list = ["Suva", 0, "Nadi", "Lautoka", 0, 0]
 alternate_names_list = [["SUV", "Souba", "Souva", "Sufa", "Suv", "Suva", "Suva City", "Suvae", "Suvo", "Suwa", "cuva", "su wa", "suba", "subha", "suva", "suwa", "swbh", "swfa", "swwa", "Σούβα", "Сувæ", "Сува", "Սուվա", "סובה", "سوفا", "سووا", "सुवा", "সুভা", "ਸੂਵਾ", "சுவா", "ซูวา", "སུ་ཝ།", "სუვა", "ሱቫ", "スバ", "蘇瓦", "수바"], ["Na Singatoka", "Nasigatoka", "Sigatoka", "Singatoka", "Singatoke"], ["NAN", "Nadi", "Nadis", "Nandi", "Nanti Fitzi", "nadi", "nady", "nan di", "nandi", "nanti", "Νάντι Φίτζι", "Нанди", "نادي", "நண்டி", "ナンディ", "楠迪", "나디", "난디"], ["Lautok", "Lautoka", "lao tuo ka", "lautoka", "lawtwka", "lutokka", "lwtwqh", "rautoka", "Лаутока", "לוטוקה", "لاوتوكا", "لاوتوکا", "लौतोका", "லூடோக்கா", "ラウトカ", "劳托卡", "라우토카"], ["LBS", "Labasa", "Lambasa", "Lambasa Mill", "Lambase", "Lambassa"], [""]]
 latitude_list = [-18.13683, -18.14307, -17.80309, -17.61686, -16.4332, -18.07051]
 longitude_list = [178.42531, 177.50691, 177.41617, 177.45049, 179.36451, 178.51313]

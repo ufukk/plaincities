@@ -1,6 +1,6 @@
 geoid_list = [1282027]
 name_list = ["馬累"]
-ascii_name_list = [0]
+ascii_name_list = ["Male"]
 alternate_names_list = [["瑪律"]]
 latitude_list = [4.17521]
 longitude_list = [73.50916]

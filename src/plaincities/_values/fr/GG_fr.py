@@ -1,6 +1,6 @@
 geoid_list = [3042287]
 name_list = ["Saint-Pierre-Port"]
-ascii_name_list = [0]
+ascii_name_list = ["Saint Peter Port"]
 alternate_names_list = [["GCI", "Saint Peter Port", "Saint Pierre Port", "Saint-Pierre-Port", "Sanktapetrurbo", "Sejnt Pitur Port", "Sent Piter Port", "Sent Piter Portas", "Sent-Pitehr-Port", "Sent-Piter-Port", "Sentpiterporta", "Sentpīterporta", "St Peter Port", "St. Peter Port", "san bytr bwrt", "seinteupiteopoteu", "sent pi texr phxrt", "sheng bi de gang", "sn ptr pwrt", "snt pytr pwrt", "Сейнт Питър Порт", "Сент Питер Порт", "Сент-Питер-Порт", "Сент-Пітер-Порт", "Сент-Пітэр-Порт", "סנט פיטר פורט", "سان بيتر بورت", "سن پتر پورت", "سینٹ پیٹر پورٹ", "เซนต์ปีเตอร์พอร์ต", "სენტ-პიტერ-პორტი", "セント・ピーター・ポート", "圣彼得港", "세인트피터포트"]]
 latitude_list = [49.45981]
 longitude_list = [-2.53527]

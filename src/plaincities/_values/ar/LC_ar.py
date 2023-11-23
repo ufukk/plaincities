@@ -1,6 +1,6 @@
 geoid_list = [3576812]
 name_list = ["كاستريس"]
-ascii_name_list = [0]
+ascii_name_list = ["Castries"]
 alternate_names_list = [["Castries", "Kastri", "Kastrijs", "Kastris", "Kastrizo", "Kastry", "Kastrys", "Port Castries", "ka si te li", "kaeseuteuliseu", "kasatarisa", "kastris", "kastrys", "kasutorizu", "kestrijha", "qstryz", "Κάστρις", "Кастри", "Кастрийс", "Кастрис", "Кастры", "Кастрі", "קסטריז", "كاستريس", "کاستریس", "कॅस्ट्रीझ", "ਕਾਸਤਰੀਸ", "காஸ்ட்ரீஸ்", "แคสตรีส์", "ཁ་སི་ཐྲིས།", "კასტრი", "ካስትሪስ", "カストリーズ", "卡斯特里", "캐스트리스"]]
 latitude_list = [13.9957]
 longitude_list = [-61.00614]

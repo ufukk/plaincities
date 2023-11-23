@@ -1,6 +1,6 @@
 geoid_list = [3042237]
 name_list = ["دوغلاس"]
-ascii_name_list = [0]
+ascii_name_list = ["Douglas"]
 alternate_names_list = [["Daglas", "Daglasa", "Daglasas", "Daglaso", "Doolish", "Douglas", "Douglas pa Isle of Man", "Douglas på Isle of Man", "Douglas  Isle of Man", "Dubh Lios", "Duglas", "Duqlas", "Ntanklas", "Port Douglas", "dagalasa", "daglasa", "dagurasu", "daklas", "dao ge la si", "deogeulleoseu", "duglasi", "dwghlas", "dwglas", "taklacu", "Ντάγκλας", "Даглас", "Дуглас", "Дъглас", "דאגלס", "دوغلاس", "دوگلاس", "ڈگلس", "डग्लस", "ਡਗਲਸ", "டக்லசு", "ดักลาส", "დუგლასი", "ダグラス", "道格拉斯", "더글러스"]]
 latitude_list = [54.15]
 longitude_list = [-4.48333]

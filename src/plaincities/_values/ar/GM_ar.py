@@ -1,6 +1,6 @@
 geoid_list = [2411880, 2411989, 2412749, 2413515, 2413753, 2413876, 2413920]
 name_list = ["Sukuta", "سيريكوندا", "Lamin", "Farafenni", "Brikama", "بانجول", "باكاو"]
-ascii_name_list = [0, 0, 0, 0, 0, 0, 0]
+ascii_name_list = [0, "Serekunda", 0, 0, 0, "Banjul", "Bakau"]
 alternate_names_list = [["Dembadu", "Sabiji", "Sukuta", "Sukuto", "Sukutta"], ["Jeswang", "Sere Kunda", "Serekunda", "Serrekunda", "serekunda", "syrykwnda", "سيريكوندا", "セレクンダ"], ["Lamin"], ["Farafenis", "Farafenni", "fa la fen ni", "farafeni", "palapeni", "פאראפני", "ファラフェニ", "法拉芬尼", "파라페니"], ["Brikama", "Brikame", "beulikama", "brykama", "bu li ka ma", "burikama", "Брикама", "Брикаме", "بریکاما", "ブリカマ", "布里卡馬", "브리카마"], ["BJL", "Bandzhul", "Bandzul", "Bandzula", "Bandzulis", "Bandżul", "Bandžula", "Bandžulis", "Banjoul", "Banjul", "Banjulo", "Banyul", "Banzhul", "Banĵulo", "Bathurst", "Bathurstopolis", "Mpanzoul", "bajula", "ban cul", "ban zhu", "ban zhu er", "banjul", "banjula", "banjuli", "banjuru", "banjwl", "bngwl", "pancul", "Μπανζούλ", "Банджул", "Банжул", "Банџул", "Банҷул", "Բանջուլ", "באנזשול", "בנגול", "بانجول", "बंजुल", "बाञ्जुल", "ਬੰਜੁਲ", "பஞ்சுல்", "บันจูล", "བཱན་ཇཱུ་ལ།", "ბანჯული", "ባንጁል", "バンジュール", "班珠尔", "班竹", "반줄"], ["Bakau", "ba kao", "bakau", "bakaw", "باكاو", "巴考", "바카우"]]
 latitude_list = [13.41033, 13.43833, 13.35222, 13.56667, 13.27136, 13.45274, 13.47806]
 longitude_list = [-16.70815, -16.67806, -16.43389, -15.6, -16.64944, -16.57803, -16.68194]

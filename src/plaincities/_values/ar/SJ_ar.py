@@ -1,6 +1,6 @@
 geoid_list = [2729907]
 name_list = ["لونقييربين"]
-ascii_name_list = [0]
+ascii_name_list = ["Longyearbyen"]
 alternate_names_list = [["لونغياربين"]]
 latitude_list = [78.22334]
 longitude_list = [15.64689]

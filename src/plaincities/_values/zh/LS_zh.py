@@ -1,6 +1,6 @@
 geoid_list = [932183, 932218, 932438, 932505, 932521, 932614, 932698, 932886, 1106835]
 name_list = ["Quthing", "Qacha’s Nek", "Mohale’s Hoek", "马塞卢", "Maputsoe", "Mafeteng", "Leribe", "Butha-Buthe", "Thaba-Tseka"]
-ascii_name_list = [0, "Qacha's Nek", "Mohale's Hoek", 0, 0, 0, 0, 0, 0]
+ascii_name_list = [0, "Qacha's Nek", "Mohale's Hoek", "Maseru", 0, 0, 0, 0, 0]
 alternate_names_list = [["Cguting", "Moyeni", "Quthing", "UTG", "Цгутинг"], ["Qacha's Neck", "Qacha's Nek", "Qacha's Nek Residency", "Qachas Nek Camp", "Qachasnek Camp", "Qacha’s Neck", "Qacha’s Nek", "Qacha’s Nek Residency", "UNE"], ["Mohale's Hoek", "Mohale’s Hoek"], ["MSU", "Maserou", "Maseru", "Maseruo", "Maserú", "Mazerou", "ma sai lu", "ma se ru", "ma xie lu", "maceru", "maselu", "maseru", "masrw", "masyrw", "msrw", "Μαζέρου", "Μασερού", "Масеру", "Մասերու", "מאסערו", "מסרו", "ماسرو", "ماسيرو", "ماسیرو", "ماسێرو", "मासेरू", "ਮਸੇਰੂ", "மசேரு", "มาเซรู", "མ་སི་རུ།", "მასერუ", "መሴሩ", "マセル", "馬些盧", "马塞卢", "마세루"], ["Maputsoe"], ["MFC", "Mafeteng"], ["Hlotse", "LRB", "Leribe", "Лерибе"], ["Buta-Buteh", "Butha-Buthe", "Бута-Бутэ"], ["THB", "Taba-Ceka", "Thaba-Tseka", "Таба-Цека"]]
 latitude_list = [-30.40001, -30.11537, -30.15137, -29.31667, -28.8866, -29.82299, -28.87185, -28.76659, -29.52204]
 longitude_list = [27.70027, 28.68936, 27.47691, 27.48333, 27.89915, 27.23744, 28.04501, 28.24937, 28.6084]

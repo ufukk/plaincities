@@ -1,6 +1,6 @@
 geoid_list = [3575551]
 name_list = ["巴斯特尔"]
-ascii_name_list = [0]
+ascii_name_list = ["Basseterre"]
 alternate_names_list = [["Basse Terre Town", "Basseterre", "Baste", "Bastehr", "Baster", "Bastera", "Basteras", "Bastero", "Bastè", "Mpaster", "SKB", "ba si te er", "basetera", "baseteru", "baseuteleu", "bastyr", "basytyr", "pacettere", "Μπαστέρ", "Бастер", "Бастэр", "באסטר", "باستير", "باسه‌تر", "باسیتیر", "बासेतेर", "பாசெட்டெரே", "บาสแตร์", "པ་སི་ཐེར།", "ბასტერი", "ባስቴር", "バセテール", "巴斯特尔", "바스테르"]]
 latitude_list = [17.2955]
 longitude_list = [-62.72499]

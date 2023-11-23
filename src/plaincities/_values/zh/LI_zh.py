@@ -1,6 +1,6 @@
 geoid_list = [3042030]
 name_list = ["瓦都茲"]
-ascii_name_list = [0]
+ascii_name_list = ["Vaduz"]
 alternate_names_list = [["Bantouz", "QVU", "Vaduc", "Vaducas", "Vaduz", "Vaduzo", "fadoutsu", "paducheu", "vadutsi", "wa dou zi", "Βαντούζ", "Вадуц", "פאדוץ", "ვადუცი", "ፋዱጽ", "ファドゥーツ", "瓦都茲", "파두츠"]]
 latitude_list = [47.14151]
 longitude_list = [9.52154]

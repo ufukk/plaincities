@@ -1,6 +1,6 @@
 geoid_list = [3579925]
 name_list = ["Saint-Georges"]
-ascii_name_list = [0]
+ascii_name_list = ["Saint George's"]
 alternate_names_list = [["Fort Royal", "Georgetown", "Grenada City", "Lewis", "Port Louis", "Port Royal", "Saint George", "Saint George's", "Saint George.s", "Saint-Georges", "Sent Dzordzas", "Sent Džordžas", "Sent Tzortzes", "Sent-Dzhorzhes", "St Georges", "St. George's", "seinteujojiseu", "sentojojizu", "snt g'wrg'", "Σεντ Τζόρτζες", "Сент-Джоржес", "סנט ג'ורג'", "セントジョージズ", "세인트조지스"]]
 latitude_list = [12.05288]
 longitude_list = [-61.75226]

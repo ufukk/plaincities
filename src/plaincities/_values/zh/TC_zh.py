@@ -1,6 +1,6 @@
 geoid_list = [3576994]
 name_list = ["科伯恩城"]
-ascii_name_list = [0]
+ascii_name_list = ["Cockburn Town"]
 alternate_names_list = [["Cockburn Town", "Kobern Taun", "Kobern Taunas", "Kobern-Taun", "Kobərn Taun", "Kokburn Taun", "Kokburno", "Kokmpern Taoun", "kakpern nakaram", "ke bo en cheng", "kh xk beir ntha wn", "kobeontaun", "kokabarna ta'una", "kokkubantaun", "kwk brn tawn  bahama", "Κόκμπερν Τάουν", "Коберн Таун", "Коберн-Таун", "Коберн-Таўн", "Кокбърн Таун", "קוקבורן טאון", "کاک برن ٹاؤن", "کوک برن تاون، باهاما", "कॉकबर्न टाउन", "காக்பேர்ண் நகரம்", "ค็อกเบิร์นทาวน์", "კოკბერნ-ტაუნი", "コックバーンタウン", "科伯恩城", "코번타운"]]
 latitude_list = [21.46122]
 longitude_list = [-71.14188]

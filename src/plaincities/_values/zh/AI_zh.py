@@ -1,6 +1,6 @@
 geoid_list = [3573374]
 name_list = ["瓦利"]
-ascii_name_list = [0]
+ascii_name_list = ["The Valley"]
 alternate_names_list = [["De Balei", "El Valle", "La-Valo", "The Valley", "Vali", "Valis", "Valley", "Valli", "bare", "d wly", "deobaelli", "dy wyly", "hwwʼly", "ti velli", "vali", "wa li", "Δε Βάλεϊ", "Вали", "Валли", "Валлі", "Валі", "הוואלי", "د ولی", "دی ویلی", "தி வேல்லி", "เดอะแวลลีย์", "ვალი", "バレー", "瓦利", "더밸리"]]
 latitude_list = [18.21704]
 longitude_list = [-63.05783]

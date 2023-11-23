@@ -1,6 +1,6 @@
 geoid_list = [2960316, 2960596, 2960634]
 name_list = ["Luxemburgo", "Esch-sur-Alzette", "Dudelange"]
-ascii_name_list = [0, 0, 0]
+ascii_name_list = ["Luxembourg", 0, 0]
 alternate_names_list = [["Ciudad de Luxemburgo"], ["Ehsh-sjur-Al'zet", "Ehsh-sjur-Al'zett", "Ehsh-sjur-Alzette", "Es-syr-Alzet", "Esas prie Alzeto", "Esch", "Esch an der Alzette", "Esch-Uelzecht", "Esch-an-der-Alzette", "Esch-an-der-Alzig", "Esch-sur-Alzette", "Esh sir Alzet", "Esh-sjur-Al'zett", "Ešas prie Alzeto", "a er ze te he pan ai shi", "ash-swr-alzt", "eshu=shuru=aruzetto", "esyuswileualjeteu", "Ες-συρ-Αλζέτ", "Еш сир Алзет", "Еш-сюр-Альзетт", "Эш-сюр-Алзетте", "Эш-сюр-Альзет", "Эш-сюр-Альзетт", "اش-سور-الزت", "エシュ＝シュル＝アルゼット", "阿尔泽特河畔埃施", "에슈쉬르알제트"], ["Diddeleng", "Didelanzh", "Diudelanzas", "Diudelanžas", "Djudelanzh", "Dudelange", "Dudelingen", "Duedelingen", "Dzjudzelanzh", "Düdelingen", "Gemeng Diddeleng", "dwdlanzh", "Дзюдзеланж", "Диделанж", "Дюделанж", "دودلانژ"]]
 latitude_list = [49.61167, 49.49583, 49.48056]
 longitude_list = [6.13, 5.98056, 6.0875]

@@ -1,6 +1,6 @@
 geoid_list = [2309332, 2309527, 2310046]
 name_list = ["Ebebiyin", "Santa Isabel", "Bata"]
-ascii_name_list = [0, 0, 0]
+ascii_name_list = [0, "Malabo", 0]
 alternate_names_list = [["Ebebiin", "Ebebijinas", "Ebebiyin", "Ebebiyín", "Ebibeyin", "Ebibeying", "Ehbeb'in", "ai bei bi yin", "ebebiin", "ebebiini", "Ебебіїн", "Эбебьин", "ებებიინი", "エベビイン", "埃贝比因", "에베비인"], ["Malabo", "Ciudad de Malabo"], ["BSG", "Bata", "Batao", "Kokapipa", "ba ta", "bata", "Бата", "באטה", "باتا", "ბატა", "バタ", "巴塔", "바타"]]
 latitude_list = [2.15218, 3.75578, 1.86391]
 longitude_list = [11.33013, 8.78166, 9.76582]

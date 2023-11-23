@@ -1,6 +1,6 @@
 geoid_list = [3513090]
 name_list = ["ويلمستاد"]
-ascii_name_list = [0]
+ascii_name_list = ["Willemstad"]
 alternate_names_list = [["Vilemstad", "Vilemstadas", "Vilemstade", "Vilemstado", "Villemstad", "Villemstant", "Villemştad", "Willemstad", "Willemsted", "Willemstêd", "billemseutateu", "uiremusutatto", "vilemastada", "villemstatu", "wei lian si ta de", "willems tad", "wylmstad", "Βίλλεμσταντ", "Вилемстад", "Виллемстад", "Вілемстад", "Віллемстад", "וילמסטאד", "ويلمستاد", "ویلمستاد", "ویلمسٹیڈ", "विलेमश्टाड", "வில்லெம்ஸ்டாடு", "วิลเลมสตัด", "ვილემსტადი", "ウィレムスタット", "威廉斯塔德", "빌렘스타트"]]
 latitude_list = [12.12246]
 longitude_list = [-68.88641]

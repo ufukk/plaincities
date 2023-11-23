@@ -1,6 +1,6 @@
 geoid_list = [3383330, 3383714]
 name_list = ["帕拉马里博", "Lelydorp"]
-ascii_name_list = [0, 0]
+ascii_name_list = ["Paramaribo", 0]
 alternate_names_list = [["PBM", "Paramaribas", "Paramaribo", "Paramaribô", "Paramarimpo", "Paramaryba", "Paramaríbó", "ba la ma li bo", "baramarybw", "pa la ma li bo", "pa rama ri bo", "palamalibo", "paramaribo", "paramaripo", "paramarybw", "prmrybw", "Παραμαρίμπο", "Парамарибо", "Парамарыба", "Парамарібо", "Պարամարիբո", "פאראמאריבא", "פרמריבו", "باراماريبو", "پاراماریبو", "पारामरिबो", "पारामारिबो", "ਪਾਰਾਮਾਰੀਬੋ", "પારામારિબો", "பரமாரிபோ", "ปารามารีโบ", "པེ་ར་མེ་རི་བོ།", "პარამარიბო", "ፓራማሪቦ", "パラマリボ", "巴拉馬利波", "帕拉马里博", "파라마리보"], ["Lelydorp"]]
 latitude_list = [5.86638, 5.7]
 longitude_list = [-55.16682, -55.23333]

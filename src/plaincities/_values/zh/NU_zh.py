@@ -1,6 +1,6 @@
 geoid_list = [4036284]
 name_list = ["阿洛菲"]
-ascii_name_list = [0]
+ascii_name_list = ["Alofi"]
 alternate_names_list = [["Alofi", "Alofis", "Alofo", "Pasjolak Alofi", "a luo fei", "alaphi", "allopi", "alophi", "alopi", "alwfy", "arofi", "xalofi", "Αλόφι", "Алофи", "Алофі", "Пасёлак Алофі", "الوفی", "अलोफी", "അലാഫി", "อาโลฟี", "ალოფი", "アロフィ", "阿洛菲", "알로피"]]
 latitude_list = [-19.05294]
 longitude_list = [-169.91957]

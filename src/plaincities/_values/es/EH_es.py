@@ -1,6 +1,6 @@
 geoid_list = [2462881, 2463029, 2463447]
 name_list = ["El Aaiún", "Cabo Bojador", "Dajla"]
-ascii_name_list = [0, 0, 0]
+ascii_name_list = ["Laayoune", "Boujdour", "Dakhla"]
 alternate_names_list = [["Aaiún"], ["Boujdour", "Cabo Bojador", "Cape Blanc", "bwjdwr", "بوجدور", "ⴱⵓⵊⴷⵓⵔ"], ["Villa Cisneros"]]
 latitude_list = [27.1418, 26.13073, 23.68477]
 longitude_list = [-13.18797, -14.48513, -15.95798]

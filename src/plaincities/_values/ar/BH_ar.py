@@ -1,6 +1,6 @@
 geoid_list = [290104, 290187, 290215, 290247, 290269, 290332, 290340, 385038]
 name_list = ["سِتْرَة", "مَدِينَة عِيسَى", "جِدّ حَفْص", "مَدِينَة حَمَد", "دَار كُلَيْب", "محرق", "اَلْمَنَامَة", "اَلرِّفَاع"]
-ascii_name_list = [0, "Madinat `Isa", "Jidd Hafs", "Madinat Hamad", "Dar Kulayb", 0, 0, "Ar Rifa'"]
+ascii_name_list = ["Sitrah", "Madinat `Isa", "Jidd Hafs", "Madinat Hamad", "Dar Kulayb", "Al Muharraq", "Manama", "Ar Rifa'"]
 alternate_names_list = [["سترة"], ["Isa", "Isa Town", "Madinat `Isa", "Madīnat ‘Īsá", "Medinat Isa", "مَدِينَة عِيسَى"], ["Djidd Hafs", "Djidd Ḥafṣ", "Jadd Hafs", "Jid Hafs", "Jidd Hafs", "Jidd Ḩafş", "Judd Hafs", "Judd Ḩafş", "jid hafs", "جِدّ حَفْص"], ["Hamad Town", "Madinat Hamad", "Madīnat Ḩamad", "madinat hamad", "مَدِينَة حَمَد"], ["Dar Chulaib", "Dar Kulaib", "Dar Kulayb", "Dār Kulaib", "Dār Kulayb", "dar kulayb", "دَار كُلَيْب"], ["اَلْمُحَرَّق"], ["المنامة"], ["Ar Rifā‘"]]
 latitude_list = [26.15472, 26.17361, 26.21861, 26.11528, 26.06861, 26.25722, 26.22787, 26.13]
 longitude_list = [50.62056, 50.54778, 50.54778, 50.50694, 50.50389, 50.61194, 50.58565, 50.555]

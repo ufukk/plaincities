@@ -1,6 +1,6 @@
 geoid_list = [1252416, 1252479, 1252484, 1252608]
 name_list = ["Thimphu", "Punakha", "Phuntsholing", "Tsirang"]
-ascii_name_list = [0, "Punakha", 0, 0]
+ascii_name_list = [0, 0, 0, 0]
 alternate_names_list = [["Tempu", "Thimbu", "Thimfou", "Thimpago", "Thimphou", "Thimphu", "Thimpu", "Timbu", "Timbuo", "Timfou", "Timfu", "Timfú", "Timphu", "Timpou (therine) Pounaka (cheimerine)", "Timpu", "Timpû", "Tkhimpkhu", "Tėmpu", "thim phu", "thimphu", "thimpu", "thiphu", "thymphw", "timbu", "timphu", "timpu", "ting bu", "tinpu", "tymfw", "tymfww", "tympw", "Θίμφου", "Τιμπού (θερινή) Πουνάκα (χειμερινή)", "Тимбу", "Тхимпху", "Тхімпху", "Թհիմփհու", "טהימפהו", "تىمپۇ", "تيمفو", "تھمپو", "تیمفو", "تیمفوو", "تیمپو", "ٹھمپھو", "थिंफू", "थिम्पु", "थिम्पू", "थिम्फू", "থিম্ফু", "ਥਿੰਫੂ", "ଥିମ୍ପୁ", "திம்பு", "థింపూ", "ಥಿಂಪು", "തിംഫു", "තිම්පු", "ทิมพู", "ཐིམ་ཕུ།", "ཐིམ་ཕུུུུ", "თიმფუ", "ጢምጱ", "ティンプー", "廷布", "팀부"], ["Distrito de Punakha", "Dzongkhag Punakha", "Punaka", "Punakha", "Punakkha", "Punakla", "Punāka", "Punākla", "pu na ka", "Пунакха", "སྤུ་ན་ཁ་", "普那卡"], ["Phuentsholing", "Phuentsolingo", "Phuentŝolingo", "Phunchholing", "Phuntsoling", "Pkhuncholing", "Puncolingas", "Punčolingas", "peng cuo lin", "phuncholinga", "puncholling", "Пхунчолинг", "Пхунчолінг", "پھونتشولنگ", "फुन्छोलिङ्ग", "ཕུན་ཚོགས་གླིང་", "彭措林", "푼촐링"], ["Chirang", "Tsirang"]]
 latitude_list = [27.46609, 27.59137, 26.85164, 27.0219]
 longitude_list = [89.64191, 89.87743, 89.38837, 90.12291]

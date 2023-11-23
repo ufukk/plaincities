@@ -1,6 +1,6 @@
 geoid_list = [2110394]
 name_list = ["Fongafale (atolón de Funafuti)"]
-ascii_name_list = [0]
+ascii_name_list = ["Funafuti"]
 alternate_names_list = [["FUN", "Fongafale", "Fongafale (atolon de Funafuti)", "Fongafale (atolón de Funafuti)", "Funafuti", "Phounaphouti", "punaputi", "Φουναφούτι", "푸나푸티"]]
 latitude_list = [-8.52425]
 longitude_list = [179.19417]

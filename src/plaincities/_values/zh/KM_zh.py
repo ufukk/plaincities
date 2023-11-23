@@ -1,6 +1,6 @@
 geoid_list = [921753, 921772]
 name_list = ["Moutsamoudou", "莫洛尼"]
-ascii_name_list = [0, 0]
+ascii_name_list = [0, "Moroni"]
 alternate_names_list = [["Matsamudu", "Moutsamoudou", "Mutsamudu", "mwtsamwdw", "موتسامودو"], ["Maroni", "Moroni", "Moronio", "Moronis", "Morony", "Moròni", "Muruni", "Móróní", "YVA", "mo luo ni", "mo ro ni", "moloni", "moroni", "muruni", "mwrwny", "Μορονί", "Мароні", "Морони", "Мороні", "Մորոնի", "מורוני", "موروني", "مورونی", "مۆرۆنی", "मोरोनी", "ਮੋਰੋਨੀ", "மூறூனீ", "โมโรนี", "མོ་རོ་ནི།", "მორონი", "ሞሮኒ", "モロニ", "莫洛尼", "莫羅尼", "모로니"]]
 latitude_list = [-12.16672, -11.70216]
 longitude_list = [44.39944, 43.25506]

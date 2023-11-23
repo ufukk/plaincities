@@ -1,6 +1,6 @@
 geoid_list = [2135171]
 name_list = ["Port Vila"]
-ascii_name_list = [0]
+ascii_name_list = ["Port-Vila"]
 alternate_names_list = [["Bila", "Fila", "Port Fila", "Port Vila", "Port-Vila", "VLI", "Vila", "poteubilla", "potobira", "pwrt wylh", "wei la gang", "Βίλα", "Порт Вила", "Порт-Вила", "פורט וילה", "ፖርት ቪላ", "ポートビラ", "維拉港", "포트빌라"]]
 latitude_list = [-17.73648]
 longitude_list = [168.31366]

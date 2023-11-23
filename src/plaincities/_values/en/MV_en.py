@@ -1,6 +1,6 @@
 geoid_list = [1282027]
 name_list = ["Malé"]
-ascii_name_list = [0]
+ascii_name_list = ["Male"]
 alternate_names_list = [["MLE", "Maale", "Male", "Malé", "Malė", "ma lei", "ma lu", "male", "malle", "mare", "Μαλέ", "Мале", "מאלה", "މާލެ", "माले", "মালে", "மாலே", "มาเล", "มาเล่", "マレ", "瑪律", "馬累", "말레"]]
 latitude_list = [4.17521]
 longitude_list = [73.50916]

@@ -1,6 +1,6 @@
 geoid_list = [3577430]
 name_list = ["رود تاون"]
-ascii_name_list = [0]
+ascii_name_list = ["Road Town"]
 alternate_names_list = [["Road Town", "Rod Taunas", "Rod-Taun", "Rod-Tauno", "Rod-Taŭno", "Roount Taoun", "Roud Taun", "lodeutaun", "luo de cheng", "rodotaun", "rotu tavun", "rwd tawn", "Ρόουντ Τάουν", "Род-Таун", "Род-Таўн", "Роуд Таун", "רואוד טאון", "رود تاون", "روڈ ٹاون", "ரோடு டவுன்", "როუდ-ტაუნი", "ロードタウン", "罗德城", "로드타운"]]
 latitude_list = [18.42693]
 longitude_list = [-64.62079]

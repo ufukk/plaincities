@@ -1,6 +1,6 @@
 geoid_list = [3578069, 7266440]
 name_list = ["普利茅斯", "布莱兹"]
-ascii_name_list = [0, 0]
+ascii_name_list = ["Plymouth", "Brades"]
 alternate_names_list = [["Plimouth", "Plimut", "Plimutas", "Plimuto", "Plymouth", "Plymouth pa Montserrat", "Plymouth på Montserrat", "blymwth", "peullimeoseu", "phli math", "plymwt", "pu li mao si", "purimasu", "Πλίμουθ", "Плимут", "Плимът", "Плімут", "פלימות", "بليموث", "پلایماؤت، مانٹسریٹ", "پلی‌موث، مونتسرات", "พลิมัท", "პლიმუთი", "プリマス", "普利茅斯", "플리머스"], ["Brades Estate", "Bradeso", "Breidsas", "Breints", "Brejds", "Breyds", "Vjoska Brehjds", "be rds", "beuleijeu", "breidsi", "brydz", "bu lai ci", "bureizu", "pirate", "Μπρέιντς", "Брейдс", "Брејдс", "Вёска Брэйдс", "בראדס", "بریدز", "بریڈیس", "பிராதெ", "เบรดส์", "ბრეიდსი", "ブレイズ", "布莱兹", "브레이즈"]]
 latitude_list = [16.70555, 16.79183]
 longitude_list = [-62.21292, -62.21058]

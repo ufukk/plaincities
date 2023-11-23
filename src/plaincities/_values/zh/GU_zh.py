@@ -1,6 +1,6 @@
 geoid_list = [4038659, 4038794, 4043547, 4043909, 4044012, 7268049, 7874631]
 name_list = ["Tamuning-Tumon-Harmon Village", "Yigo Village", "Guam Government House", "Dededo Village", "阿加尼亚", "Mangilao Village", "塔穆宁"]
-ascii_name_list = [0, 0, 0, 0, "Hagatna", 0, 0]
+ascii_name_list = [0, 0, 0, 0, "Hagatna", 0, "Tamuning"]
 alternate_names_list = [["Maria Christina", "Timoneng"], ["Yigu"], ["Designer Architect Richard Neutra"], ["Dedidu"], ["Agadna", "Agana", "Agana -1998", "Agania", "Aganija", "Aganja", "Agano", "Agaña", "Aguana", "Akashi", "Akashi - JP renamed WW2", "Ankana", "City of Ignacio de Agana", "City of Saint Ignacio de Agana", "Ciudad de San Ignacio de Agana", "Hagadna", "Hagatna", "Hagåtña", "Haqatna", "Jagatna", "Khagatna", "San Ignacio de Agana *", "Ville d'Agana", "Vjoska Agan'ja", "a jia ni ya", "akatna", "ha katya", "hagania", "hagasnya", "hagatna", "hagatnya", "haghatnya", "hegatn'ya", "Αγκάνα", "Вёска Аганья", "Хагатна", "Хагатња", "Հագատնա", "هاغاتنيا", "هاگاتنا", "هاگاتنیا", "हेगात्न्या", "அகாத்ன", "ฮากาตญา", "ჰაგატნა", "ハガニア", "阿加尼亚", "하갓냐"], ["Manguilao", "Manguuao"], ["Tamuneng", "Tamuning", "ta mu ning", "tamunin", "tamuning", "tamwnyng", "tamwnyng  gwam", "Тамунинг", "تامونینگ", "تامونینگ، گوام", "タムニン", "塔穆宁", "타무닝"]]
 latitude_list = [13.48773, 13.53605, 13.47191, 13.51777, 13.47567, 13.44761, 13.48754]
 longitude_list = [144.78138, 144.88855, 144.74978, 144.8391, 144.74886, 144.80109, 144.78143]

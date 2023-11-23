@@ -1,6 +1,6 @@
 geoid_list = [3421319]
 name_list = ["努克"]
-ascii_name_list = [0]
+ascii_name_list = ["Nuuk"]
 alternate_names_list = [["GOH", "Godhopa", "Godthaab", "Godthab", "Godthåb", "Nououk", "Nuk", "Nuka", "Nukas", "Nuko", "Nuuk", "Nuuk (Godthab)", "Nuuk (Godthåb)", "Nuuks", "Nūka", "nu ke", "nuk", "nuka", "nukeu", "nuku", "nwk", "nwʼwq", "Νουούκ", "Нук", "Нуук", "Նուուկ", "נואוק", "نوك", "نوک", "नूक", "নুক", "ਨੂਕ", "ନୁକ", "நூக்", "นุก", "ნუუკი", "ᓅᒃ", "ヌーク", "努克", "누크"]]
 latitude_list = [64.18347]
 longitude_list = [-51.72157]

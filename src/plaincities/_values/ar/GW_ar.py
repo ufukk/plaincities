@@ -1,6 +1,6 @@
 geoid_list = [2374775, 2375254]
 name_list = ["بيساو", "Bafatá"]
-ascii_name_list = [0, "Bafata"]
+ascii_name_list = ["Bissau", "Bafata"]
 alternate_names_list = [["Bisao", "Bisau", "Bisau - Bissau", "Bisauo", "Bisava", "Bisaŭo", "Biso", "Bissa", "Bissao", "Bissau", "Bissá", "Bisáu", "Mpissaou", "OXB", "Sao Jose de Bissau", "São José de Bissáu", "Wisaw", "bi shao", "bis sea", "bis'sa'u", "bisa'u", "bisau", "bsaw", "bysaw", "bysayw", "picavu", "Μπισσάου", "Бисао", "Бисау", "Бісау", "Բիսաու", "ביסאו", "بساؤ", "بيساو", "بیسائو", "بیساو", "बिसाउ", "বিসাউ", "বিস্সাউ", "ਬਿਸਾਊ", "பிசாவு", "บิสเซา", "བི་སའོ།", "ბისაუ", "ቢሳው", "ビサウ", "比紹", "比绍", "비사우"], ["Bafata", "Bafatá"]]
 latitude_list = [11.86357, 12.16583]
 longitude_list = [-15.59767, -14.66167]

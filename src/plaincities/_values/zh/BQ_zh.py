@@ -1,6 +1,6 @@
 geoid_list = [3513563]
 name_list = ["克拉伦代克"]
-ascii_name_list = [0]
+ascii_name_list = ["Kralendijk"]
 alternate_names_list = [["Kralendajk", "Kralendehjk", "Kralendeikas", "Kralendejk", "Kralendijk", "Kralendiyk", "Kralentik", "Playa", "ke la lun dai ke", "keulallendeikeu", "kralndyk", "kralyndayk", "kurarendaiku", "Κράλεντικ", "Кралендайк", "Кралендајк", "Кралендейк", "Кралендэйк", "Կրալենդիյկ", "كراليندايك", "کرالندیک", "کرالن‌دیک", "კრალენდეიკი", "クラレンダイク", "克拉伦代克", "크랄렌데이크"]]
 latitude_list = [12.15]
 longitude_list = [-68.26667]

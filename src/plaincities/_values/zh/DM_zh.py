@@ -1,6 +1,6 @@
 geoid_list = [3575635]
 name_list = ["羅索"]
-ascii_name_list = [0]
+ascii_name_list = ["Roseau"]
 alternate_names_list = [["Charlotte Town", "DCB", "Razo", "Roseau", "Roseo", "Rozo", "lojo", "luo suo", "ro so", "rozo", "rusa'u", "rwsw", "rwzw", "uroco", "Ροζό", "Разо", "Розо", "Ռոզո", "רוזו", "روسو", "रुसाउ", "ਰੋਜ਼ੋ", "உறொசோ", "โรโซ", "རུ་ཟོ།", "როზო", "ሮዞ", "ロゾー", "羅索", "로조"]]
 latitude_list = [15.30174]
 longitude_list = [-61.38808]

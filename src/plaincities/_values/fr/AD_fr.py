@@ -1,6 +1,6 @@
 geoid_list = [3040051, 3041563]
 name_list = ["Escaldes-Engordany", "Andorre-la-Vieille"]
-ascii_name_list = [0, 0]
+ascii_name_list = ["les Escaldes", "Andorra la Vella"]
 alternate_names_list = [["Ehskal'des-Ehndzhordani", "Escaldes", "Escaldes-Engordany", "Les Escaldes", "esukarudesu=engorudani jiao qu", "lai sai si ka er de-en ge er da", "Эскальдес-Энджордани", "エスカルデス＝エンゴルダニ教区", "萊塞斯卡爾德-恩戈爾達", "萊塞斯卡爾德－恩戈爾達"], ["ALV", "Ando-la-Vyey", "Andora", "Andora la Vela", "Andora la Velja", "Andora lja Vehl'ja", "Andoro Malnova", "Andorra", "Andorra Tuan", "Andorra a Vella", "Andorra la Biella", "Andorra la Vella", "Andorra la Vielha", "Andorra-a-Velha", "Andorra-la-Vel'ja", "Andorra-la-Vielye", "Andorre-la-Vieille", "Andò-la-Vyèy", "Andòrra la Vièlha", "an dao er cheng", "andolalabeya", "andwra la fyla", "Ανδόρρα", "Андора ла Веля", "Андора ла Веља", "Андора ля Вэлья", "Андорра-ла-Велья", "אנדורה לה וולה", "أندورا لا فيلا", "አንዶራ ላ ቬላ", "アンドラ・ラ・ヴェリャ", "安道爾城", "안도라라베야"]]
 latitude_list = [42.50729, 42.50779]
 longitude_list = [1.53414, 1.52109]

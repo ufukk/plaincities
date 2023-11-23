@@ -1,6 +1,6 @@
 geoid_list = [2139521, 2140066, 2141394]
 name_list = ["Noumea", "Mont-Dore", "Dumbéa"]
-ascii_name_list = ["Noumea", 0, "Dumbea"]
+ascii_name_list = [0, 0, "Dumbea"]
 alternate_names_list = [["NOU", "Nomea", "Noumea", "Nouméa", "Numea", "Numeja", "Numeo", "Numėja", "Port de France", "nu me xa", "nu mei a", "nume'a", "numea", "numiya", "nwmya", "Νουμεά", "Нумеа", "נומאה", "نومئا", "نوميا", "नूमेआ", "நூமியா", "นูเมอา", "ნუმეა", "ヌメア", "努美阿", "누메아"], [""], ["Dumbea", "Dumbéa"]]
 latitude_list = [-22.27407, -22.26257, -22.15757]
 longitude_list = [166.44884, 166.56621, 166.4572]

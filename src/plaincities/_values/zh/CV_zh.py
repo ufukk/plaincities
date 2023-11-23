@@ -1,6 +1,6 @@
 geoid_list = [3374218, 3374333, 3374462, 3374707]
 name_list = ["Santa Maria", "培亞", "明德盧", "Cova Figueira"]
-ascii_name_list = [0, 0, 0, 0]
+ascii_name_list = [0, "Praia", "Mindelo", 0]
 alternate_names_list = [["Santa Maria"], ["Braia", "Cidade da Praia", "Municipio da Praia", "Município da Praia", "Pragia", "Praia", "Praja", "Praje", "Prajo", "Prajė", "Praya", "RAI", "braya", "pei ya", "peulaia", "pirxa", "pra'i'a", "pra'iya", "praya", "prayya", "puraia", "Πράγια", "Πράια", "Прая", "Праја", "Պրայա", "פראיה", "برايا", "پرائا", "پرائیا", "پرايا", "پرایا", "پڕایا", "प्राईया", "ਪ੍ਰਾਈਆ", "ไปรอา", "ཕུ་ར་ཡ།", "პრაია", "ፕራያ", "プライア", "培亞", "프라이아"], ["Mihdelo", "Mindelas", "Mindello", "Mindelo", "Mindelu", "Mintelo", "mindellu", "mindero", "ming de lu", "Μιντέλο", "Минделу", "Мінделу", "ミンデロ", "明德盧", "민델루"], ["Cova Figueira", "Koba Figera", "Kóba Figera"]]
 latitude_list = [16.59796, 14.93152, 16.89014, 14.89054]
 longitude_list = [-22.90509, -23.51254, -24.98042, -24.29343]

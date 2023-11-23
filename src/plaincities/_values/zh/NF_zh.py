@@ -1,6 +1,6 @@
 geoid_list = [2161314]
 name_list = ["金斯敦"]
-ascii_name_list = [0]
+ascii_name_list = ["Kingston"]
 alternate_names_list = [["Kingston", "Kingston pa Norfolkoya", "Kingston på Norfolkøya", "Kingstona", "Kingstonas", "Kingstono", "Kingstun", "Kinqston", "Pasjolak Kingstan", "jin si dui", "khing s tan", "kincutan", "kingseuteon", "kingstana", "kingusuton", "kynghstwn", "kyngstwn", "Кингстон", "Кингстън", "Кінгстон", "Пасёлак Кінгстан", "كينغستون", "کنگسٹن", "کینگستون", "किंग्स्टन", "கிங்சுடன்", "คิงส์ตัน", "კინგსტონი", "キングストン", "金斯敦", "킹스턴"]]
 latitude_list = [-29.05459]
 longitude_list = [167.96628]

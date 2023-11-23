@@ -1,6 +1,6 @@
 geoid_list = [3042091]
 name_list = ["Saint-Hélier"]
-ascii_name_list = [0]
+ascii_name_list = ["Saint Helier"]
 alternate_names_list = [["JER", "Saint Helier", "Saint-Helier", "Saint-Hélier", "Sankt' Heliero", "Sent-Khel'er", "St Helier", "St. Helier", "seinteuhellieo", "Сент-Хельер", "세인트헬리어"]]
 latitude_list = [49.18804]
 longitude_list = [-2.10491]

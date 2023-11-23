@@ -1,6 +1,6 @@
 geoid_list = [4035715]
 name_list = ["آواروآ"]
-ascii_name_list = [0]
+ascii_name_list = ["Avarua"]
 alternate_names_list = [["Avaroua", "Avarua", "Avaruo", "Avarúa", "RAR", "a wa lu a", "abalua", "abarua", "avarua", "avaruva", "avharu'a", "awarwa", "awarya", "xa wa raw", "Αβαρούα", "Аваруа", "Ավարուա", "אוורואה", "آواروآ", "آواریا", "अव्हारुआ", "அவாருவா", "อะวารัว", "ཨ་ཝ་རུ་ཨ།", "ავარუა", "アバルア", "阿瓦鲁阿", "아바루아"]]
 latitude_list = [-21.2075]
 longitude_list = [-159.77545]

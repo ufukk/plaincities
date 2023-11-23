@@ -1,6 +1,6 @@
 geoid_list = [3577887, 3748726]
 name_list = ["金斯敦", "Kingstown Park"]
-ascii_name_list = [0, 0]
+ascii_name_list = ["Kingstown", 0]
 alternate_names_list = [["Kin'nkstaoun", "Kingstaun", "Kingstauna", "Kingstaunas", "Kingstauno", "Kingstaŭno", "Kingstown", "Kinqstaun", "SVD", "jin si dui", "khing s thawn", "kigasata'una", "kincutavun", "kingsata'una", "kingseutaun", "kingusutaun", "kynghstawn", "kyngztawn", "Κίνγκσταουν", "Κινγκστάουν", "Кингстаун", "Киҥстаун", "Кінгстаун", "Кінгстаўн", "קינגסטאון", "كينغستاون", "کنگز ٹاؤن", "کینگزتاون", "किंग्सटाउन", "ਕਿੰਗਸਟਾਊਨ", "கிங்சுடவுன்", "คิงส์ทาวน์", "ཁིན་སི་ཐོན།", "კინგსტაუნი", "ኪንግስታውን", "キングスタウン", "金斯敦", "킹스타운"], [""]]
 latitude_list = [13.15527, 13.15924]
 longitude_list = [-61.22742, -61.23161]

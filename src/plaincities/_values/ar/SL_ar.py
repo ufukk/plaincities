@@ -1,6 +1,6 @@
 geoid_list = [2403094, 2404041, 2404433, 2406407, 2406916, 2407656, 2407790, 2408329, 2409306, 2409823, 2410048, 9191693]
 name_list = ["Waterloo", "Segbwema", "Port Loko", "Makeni", "Lunsar", "Koidu", "Kenema", "Kabala", "فريتون", "Bumpe", "Bo", "Goderich"]
-ascii_name_list = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+ascii_name_list = [0, 0, 0, 0, 0, 0, 0, 0, "Freetown", 0, 0, 0]
 alternate_names_list = [["Waterloo"], ["Segbwema"], ["Port Loka", "Port Lokko", "Port Loko", "Port-Loko", "Порт-Локо"], ["Makeni", "Makenis", "ma ka ni", "makeni", "makyny", "Μακένι", "Макени", "ماکینی", "マケニ", "馬卡尼", "마케니"], ["Lansar", "Lunsar", "Lunsare", "Лунсаре"], ["Koidu", "Koidu Town", "Koldu"], ["KEN", "Kenema", "Keneme", "kai nei ma", "kenema", "kynyma", "Κενέμα", "Кенема", "Кенеме", "کینیما", "ケネマ", "凯内马", "케네마"], ["KBA", "Kabala", "Kaballa"], ["فريتاون"], ["Bumpe"], ["Bo", "KBS", "bo", "bo cheng", "bw", "bw  syralywn", "Μπο", "Бо", "בו", "بو، سیرالیون", "ボー", "博城", "보"], [""]]
 latitude_list = [8.3389, 7.99471, 8.76609, 8.88605, 8.68439, 8.64387, 7.87687, 9.58893, 8.48714, 7.89209, 7.96472, 8.42756]
 longitude_list = [-13.07091, -10.9502, -12.78696, -12.04417, -12.53499, -10.9714, -11.19025, -11.55256, -13.2356, -11.90541, -11.73833, -13.28598]

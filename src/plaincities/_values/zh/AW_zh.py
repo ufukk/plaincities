@@ -1,6 +1,6 @@
 geoid_list = [3577072, 3577089, 3577154]
 name_list = ["Tanki Leendert", "San Nicolas", "奥拉涅斯塔德"]
-ascii_name_list = [0, 0, 0]
+ascii_name_list = [0, 0, "Oranjestad"]
 alternate_names_list = [["Tanki Leendert", "Tanki Lender"], ["San Nicolas", "Sint Nicolaas"], ["Aran'estad", "Oran'estad", "Oranestad", "Oraniestat", "Oranjestad", "Oranjestad pa Aruba", "Oranjestad på Aruba", "Oranjestadas", "Oranjestade", "Oranjestado", "Oranjested", "Oranjestêd", "ao la nie si ta de", "awrnjstad", "olanyeseutateu", "oraniesutaddo", "oraniyecuttatu", "oranjestada", "xo ran yes tad", "Οράνιεστατ", "Араньестад", "Оранестад", "Ораньестад", "Ораньєстад", "Орањестад", "אורנייסטאד", "أورنجستاد", "اورنجستاد", "اورنجسٹیڈ، اروبا", "ओरांजेश्टाड", "ஒரானியெசுத்தாடு", "โอรันเยสตัด", "ორანესტადი", "オラニエスタッド", "奥拉涅斯塔德", "오라녜스타트"]]
 latitude_list = [12.53914, 12.43624, 12.52398]
 longitude_list = [-70.02004, -69.90713, -70.02703]

@@ -1,6 +1,6 @@
 geoid_list = [1252416, 1252479, 1252484, 1252608]
 name_list = ["Timbu", "Distrito de Punakha", "Phuntsholing", "Tsirang"]
-ascii_name_list = [0, "Punakha", 0, 0]
+ascii_name_list = ["Thimphu", "Punakha", 0, 0]
 alternate_names_list = [["Thimphu"], ["Distrito de Punakha", "Dzongkhag Punakha", "Punaka", "Punakha", "Punakkha", "Punakla", "Punāka", "Punākla", "pu na ka", "Пунакха", "སྤུ་ན་ཁ་", "普那卡"], ["Phuentsholing", "Phuentsolingo", "Phuentŝolingo", "Phunchholing", "Phuntsoling", "Pkhuncholing", "Puncolingas", "Punčolingas", "peng cuo lin", "phuncholinga", "puncholling", "Пхунчолинг", "Пхунчолінг", "پھونتشولنگ", "फुन्छोलिङ्ग", "ཕུན་ཚོགས་གླིང་", "彭措林", "푼촐링"], ["Chirang", "Tsirang"]]
 latitude_list = [27.46609, 27.59137, 26.85164, 27.0219]
 longitude_list = [89.64191, 89.87743, 89.38837, 90.12291]

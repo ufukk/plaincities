@@ -1,6 +1,6 @@
 geoid_list = [3513392]
 name_list = ["菲利普斯堡"]
-ascii_name_list = [0]
+ascii_name_list = ["Philipsburg"]
 alternate_names_list = [["Filip'smpournk", "Filipsburg", "Filipsburgas", "Great Bay", "Philipsburg", "fei li pu si bao", "fi lipsburkh", "firippusuburufu", "flpsbrg", "fylypsbwrg  synt martn", "pilipcuparku", "pillibseubwileuheu", "Φίλιπσμπουργκ", "Филипсбург", "Філіпсбург", "فلپسبرگ", "فیلیپسبورگ، سینت مارتن", "பிலிப்சுபர்கு", "ฟีลิปส์บืร์ค", "ფილიპსბურგი", "フィリップスブルフ", "菲利普斯堡", "필립스뷔르흐"]]
 latitude_list = [18.026]
 longitude_list = [-63.04582]

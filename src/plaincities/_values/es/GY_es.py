@@ -1,6 +1,6 @@
 geoid_list = [3376762, 3377408, 3378644]
 name_list = ["Nueva Ámsterdam", "Linden", "Georgetown"]
-ascii_name_list = [0, 0, 0]
+ascii_name_list = ["New Amsterdam", 0, 0]
 alternate_names_list = [["N'ju-Amstehrdam", "Naujasis Amsterdamas", "New Amsterdam", "Nueva Amsterdam", "Nueva Ámsterdam", "QSX", "nyuamseuteleudam", "xin a mu si te dan", "Нью-Амстэрдам", "ניו אמסטרדם", "新阿姆斯特丹", "뉴암스테르담"], ["Linden", "Линден"], ["Demerara", "Dzhordzhtaun", "Dzordztaun", "Dzordztauna", "Dzordztaunas", "Dzordztauns", "Džordžtaun", "Džordžtauna", "Džordžtaunas", "Džordžtauns", "GEO", "Georgetown", "Georgetown i Guyana", "Georgiopolis", "Georgurbo", "Gorgtauno", "Jojton", "Jòjtòn", "Tzortztaoun", "Zhorzhtaun", "cxrc thawn", "gwrgtʼwn", "jarajata'una", "jarj ٹawn  gyana", "jarjata'una", "jojitaun", "jorjata'una", "jorjtavun", "jrj‌tawn", "jwrj tawn", "jwrj twghn", "qiao zhi dui", "qiao zhi dun", "zuo zhi cheng", "Ĝorĝtaŭno", "Τζορτζτάουν", "Τζώρτζταουν", "Џорџтаун", "Джорджтаун", "Джорджтаўн", "Жоржтаун", "Ջորջթաուն", "גורגטאון", "جارج ٹاؤن، گیانا", "جرج‌تاون", "جورج تاون", "جورج توغن", "جورج‌تاو", "जॉर्जटाउन", "ਜਾਰਜਟਾਊਨ", "ଜର୍ଜଟାଉନ", "ஜோர்ஜ்டவுண்", "ജോർജ്ജ് ടൗൺ", "จอร์จทาวน์", "ཅོར་ཅི་ཐོན།", "ჯორჯტაუნი", "ጆርጅታውን", "ジョージタウン", "乔治敦", "佐治城", "조지타운"]]
 latitude_list = [6.24793, 6.00809, 6.80448]
 longitude_list = [-57.5171, -58.30714, -58.15527]

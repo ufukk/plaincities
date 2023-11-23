@@ -1,6 +1,6 @@
 geoid_list = [2081986]
 name_list = ["帕利基尔"]
-ascii_name_list = [0]
+ascii_name_list = ["Palikir - National Government Center"]
 alternate_names_list = [["Palakir", "Palikir", "Palikyras", "Palirik", "Pallikir", "pa li ji er", "pa liki r", "pallikileu", "parikiru", "plyqyr", "Παλιρίκ", "Паликир", "Պալիկիր", "פליקיר", "ปาลีกีร์", "ፓሊኪር", "パリキール", "帕利基尔", "팔리키르"]]
 latitude_list = [6.92477]
 longitude_list = [158.16109]

@@ -1,6 +1,6 @@
 geoid_list = [3374036]
 name_list = ["بريدج تاون"]
-ascii_name_list = [0]
+ascii_name_list = ["Bridgetown"]
 alternate_names_list = [["BGI", "Bridgetown", "Bridzhtaun", "Bridztaun", "Bridztaunas", "Bridžtaunas", "Brigtauno", "Briĝtaŭno", "The Bridge Town", "beulijitaun", "brydj tawn", "bu li qi dun", "burijjitaun", "Бриджтаун", "Бриџтаун", "ברידג'טאון", "بريدج تاون", "ብርጅታውን", "ブリッジタウン", "布里奇敦", "브리지타운"]]
 latitude_list = [13.10732]
 longitude_list = [-59.62021]

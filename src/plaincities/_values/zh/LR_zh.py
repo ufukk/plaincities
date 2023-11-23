@@ -1,6 +1,6 @@
 geoid_list = [2272491, 2272790, 2273312, 2274895, 2276086, 2276492, 2276600, 2277060, 2278158, 2278682]
 name_list = ["Zwedru", "New Yekepa", "Voinjama", "蒙羅維亞", "Kakata", "Harper", "Greenville", "Gbarnga", "布坎南", "Bensonville"]
-ascii_name_list = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+ascii_name_list = [0, 0, 0, "Monrovia", 0, 0, 0, 0, "Buchanan", 0]
 alternate_names_list = [["Tchien", "Zvedru", "Zwadhru", "Zwedru", "Зведру"], ["Lamco", "Lamco Community", "New Yekepa", "Yekepa"], ["VOI", "Voinjama", "Voinyamai", "Vonjama"], ["蒙罗维亚"], ["Kakata", "Kakata City"], ["CPA", "Cape Palmas", "Harper", "Harper City"], ["Greenville", "Greenville City", "SNI", "Sino", "Sinoe", "Sinu", "Sinu Village"], ["Gbanga", "Gbanka", "Gbarnga", "Gbarnga City", "Gbarnge", "Gbarnka", "Гбарнге"], ["B'jukenen", "Biukenenas", "Bjukenen", "Buchanan", "Byukenen", "Fish Town", "Grand Bassa", "Lower Buchanan", "UCN", "bu kan nan", "bukyanan", "byukaeneon", "bywkynn  laybyrya", "bywqnn", "Бьюкенен", "Бюкенен", "Բուչանան", "ביוקנן", "بیوکینن، لائبیریا", "ブキャナン", "布坎南", "뷰캐넌"], ["Bensonville", "Bensonville City", "Bentol", "Bentol City", "Бенсонвилле"]]
 latitude_list = [6.06846, 7.57944, 8.42194, 6.30054, 6.53104, 4.3782, 5.01133, 6.99543, 5.87693, 6.44716]
 longitude_list = [-8.13559, -8.53778, -9.74778, -10.7969, -10.35368, -7.71081, -9.0388, -9.47122, -10.04964, -10.61283]

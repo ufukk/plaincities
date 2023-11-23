@@ -1,6 +1,6 @@
 geoid_list = [2108502]
 name_list = ["هونيارا"]
-ascii_name_list = [0]
+ascii_name_list = ["Honiara"]
 alternate_names_list = [["HIR", "Honiara", "Honiaro", "Khoniara", "Oniara", "ho ni xa ra", "honiala", "honiara", "huo ni ya la", "hwnyara", "Ονιάρα", "Хониара", "הוניארה", "هونيارا", "هونیارا", "โฮนีอารา", "ሆኒያራ", "ホニアラ", "霍尼亚拉", "霍尼亞拉", "호니아라"]]
 latitude_list = [-9.43333]
 longitude_list = [159.95]

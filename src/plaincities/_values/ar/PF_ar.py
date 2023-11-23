@@ -1,6 +1,6 @@
 geoid_list = [4033779, 4033936, 4034561]
 name_list = ["Punaauia", "بابيتي", "Faaa"]
-ascii_name_list = [0, 0, 0]
+ascii_name_list = [0, "Papeete", 0]
 alternate_names_list = [["Punaauia", "Punaavia"], ["PPT", "Pape'ete", "Papeehte", "Papeehteh", "Papeete", "Papeetė", "Papeiti", "Papete", "Pape’ete", "Papiete", "Papiti", "Papito", "Vaiete", "babyty", "pa pe xe te", "pa pi ti", "papeete", "papete", "papiti", "papyth", "Παπεέτε", "Папеете", "Папете", "Папеэте", "Папеэтэ", "Պապեետե", "بابيتي", "پاپیته", "پاپیٹی", "पापीती", "ปาเปเอเต", "პაპეეტე", "パペーテ", "帕皮提", "파페에테"], ["Faa'a", "Faaa", "Faa’a", "Torea"]]
 latitude_list = [-17.63333, -17.5347, -17.55933]
 longitude_list = [-149.6, -149.56843, -149.60352]

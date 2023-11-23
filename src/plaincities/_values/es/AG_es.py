@@ -1,6 +1,6 @@
 geoid_list = [3576022]
 name_list = ["Saint John's"]
-ascii_name_list = ["Saint John's"]
+ascii_name_list = [0]
 alternate_names_list = [["Saint John", "Saint John's", "Saint John’s", "Sent Dzonsas", "Sent Džonsas", "Sent Tzons", "Sent-Dzhons", "St John's", "St Johns", "St. John's", "St.John.s", "seinteujonseu", "sentojonzu", "sheng yue han", "sheng yue han shi", "snt g'wns", "Σεντ Τζονς", "Сент-Джонс", "סנט ג'ונס", "ሴንት ጆንስ፥ አንቲጋ እና ባርቡዳ", "セントジョンズ", "圣约翰", "圣约翰市", "세인트존스"]]
 latitude_list = [17.12096]
 longitude_list = [-61.84329]

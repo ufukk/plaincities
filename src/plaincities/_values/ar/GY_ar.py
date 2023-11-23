@@ -1,6 +1,6 @@
 geoid_list = [3376762, 3377408, 3378644]
 name_list = ["New Amsterdam", "Linden", "جورج توغن"]
-ascii_name_list = [0, 0, 0]
+ascii_name_list = [0, 0, "Georgetown"]
 alternate_names_list = [["N'ju-Amstehrdam", "Naujasis Amsterdamas", "New Amsterdam", "Nueva Amsterdam", "Nueva Ámsterdam", "QSX", "nyuamseuteleudam", "xin a mu si te dan", "Нью-Амстэрдам", "ניו אמסטרדם", "新阿姆斯特丹", "뉴암스테르담"], ["Linden", "Линден"], ["جورج تاون"]]
 latitude_list = [6.24793, 6.00809, 6.80448]
 longitude_list = [-57.5171, -58.30714, -58.15527]

@@ -1,6 +1,6 @@
 geoid_list = [3579132]
 name_list = ["居斯塔维亚"]
-ascii_name_list = [0]
+ascii_name_list = ["Gustavia"]
 alternate_names_list = [["Goustavia", "Gustaf", "Gustavi", "Gustavia", "Gustavija", "Gustavio", "Gustávia", "Guthavia", "Qustaviya", "guseutabia", "gustavhiya", "gusutabia", "gwiseutabia", "gwstawya", "ju si ta wei ya", "ku s ta wi ya", "kucutaviya", "Γουσταβία", "Густави", "Густавия", "Густавија", "Густавія", "گوستاویا", "گوسٹاویا", "गुस्ताव्हिया", "குசுதாவியா", "กุสตาวียา", "გუსტავია", "グスタビア", "居斯塔维亚", "구스타비아", "귀스타비아"]]
 latitude_list = [17.89618]
 longitude_list = [-62.84978]

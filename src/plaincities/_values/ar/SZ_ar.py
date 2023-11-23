@@ -1,6 +1,6 @@
 geoid_list = [934985, 934995, 935048]
 name_list = ["مبابان", "Manzini", "لوبامبا"]
-ascii_name_list = [0, 0, 0]
+ascii_name_list = ["Mbabane", 0, "Lobamba"]
 alternate_names_list = [["Embabane", "Mabane", "Mbaban", "Mbabane", "Mbabaneh", "Mbabano", "Mbabanė", "Mbabàn", "Mpampane", "QMN", "ababane", "ambabane", "ambabany", "eumbabane", "impapan", "mbaban", "mbabane", "mbabanh", "mbabyn", "mbbnh", "mo ba ben", "mubabane", "xam ba bane", "Μπαμπάνε", "Мбабане", "Мбабанэ", "Մբաբանե", "מבאבאנע", "מבבנה", "امبابانی", "مبابان", "مبابانه", "مبابانێ", "مبابین", "अंबाबाने", "ਅੰਬਾਬਾਨੇ", "இம்பபான்", "อัมบาบาเน", "མ་པ་པན།", "მბაბანე", "ምባባኔ", "ムババーネ", "墨巴本", "음바바네"], ["Bremersdorp", "MTS", "Maneini", "Manzini", "Manzinis", "Manêini", "man qi ni", "manjini", "mnzyny", "Μανζίνι", "Манзини", "Манзіні", "מנזיני", "マンジニ", "曼齐尼", "만지니"], ["Labamba", "Lobamba", "Lobambo", "Lobomba", "lobamba", "luo ban ba", "lwbama", "lwbamba", "lwbmbh", "robanba", "Лабамба", "Лобамба", "לובמבה", "لوباما", "لوبامبا", "لۆبامبا", "ლობამბა", "ロバンバ", "洛班巴", "로밤바"]]
 latitude_list = [-26.31667, -26.49884, -26.46667]
 longitude_list = [31.13333, 31.38004, 31.2]
