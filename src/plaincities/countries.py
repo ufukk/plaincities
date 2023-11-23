@@ -247,7 +247,7 @@ class Country(NamedItem, Container):
                 states[state_code].districts.append(districts[key])
             for i, _ in enumerate(values.name_list):
                 feature_code = values._feature_code_list[i]
-                if feature_code == 'STLMT':
+                if feature_code in ['STLMT']:
                     continue
                 item = module_to_dict(values, i)
                 item['ascii_name'] = item['ascii_name'] if item['ascii_name'] != 0 else item['name']
@@ -294,7 +294,7 @@ class Globe(Container):
                 self.__instances[i] = country
                 if load_all or country.alpha2 in countries_to_load\
                     or country.continent in continents_to_load:
-                    country.load_cities(path=self.__path)
+                    country.load_cities(language=language, path=self.__path)
 
     def __index_for(self, key: str | int) -> int | None:
         if isinstance(key, str):
