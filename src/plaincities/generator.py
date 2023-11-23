@@ -56,7 +56,7 @@ class CityFactory:
         values = {
             'geoid': int(row[0]),
             'name': row[1],
-            'ascii_name': row[2], 
+            'ascii_name': row[2],
             'alternate_names': row[3].split(','), 
             'latitude': float(row[4]), 
             'longitude': float(row[5]),
@@ -70,7 +70,6 @@ class CityFactory:
         }
         if values['altitude'] != -1:
             values['altitude'] = int(values['altitude'])
-        values['ascii_name'] = 0 if values['ascii_name'] == values['name'] else values['ascii_name']
         values['parent_code'] = parent_code(values['country_code'], row[10], row[11])
         return CityRow(**values)
 
@@ -142,7 +141,9 @@ class CityRow:
             self.name = names[0].name
         if len(names) > 1:
             self.alternate_names = [n.name for n in names[1:]]
-        
+        if self.name == self.ascii_name:
+            self.ascii_name = 0
+
 class AdminCodeRow:
 
     def __init__(self, geoid, code, name, ascii_name, country_code) -> None:
