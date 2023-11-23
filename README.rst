@@ -1,5 +1,5 @@
 
-plaincities is a library of places in many languages. It is based on the geonames database.
+plaincities is a library of places in many languages. It is based on `geonames <https://geonames.org/>`_ database.
 
 
 Installation
@@ -13,51 +13,62 @@ Installation
 Usage
 -----
 
-All countries are loaded after initialization but city data has to be loaded explicitly for performance reasons: 
+
+Load options:
+====================
 
 .. code-block:: python
 
-    from plaincities import Countries
-    countries = Countries(language='en')
-    india = countries['IN']
+    from plaincities import Globe
+    globe = Globe(load_all=True)
+    globe = Globe(continents_to_load=['AF', 'AS'])
+    globe = Globe(countries_to_load=['IN', 'MX'])
+
+    globe = Globe()
+    india = globe['IN']
     india.load_cities()
-    kerala = india.states['Kerala']
-    kochi = kerala.cities['Kochi']
+
+Coordinates:
+====================
+
+.. code-block:: python
+
+    globe = Globe(countries_to_load=['IN'])
+    india = globe['IN']
+    kochi = india.cities.find('Kochi')
     (kochi.latitude, kochi.longitude)
 
 .. code-block:: text
 
-   ('9.93988', '76.26022')
+    (9.93988, 76.26022)
 
-You can also load cities during initialization:
 
 .. code-block:: python
 
-    from plaincities import Countries
-    countries = Countries(countries_to_load=['IN', 'MX'])
-    mexico = countries['MX']
-    mexico.load_cities()
-    merida = mexico.cities['Mérida']
+    globe = Globe(countries_to_load=['IN'])
+    india = globe['IN']
+    varanasi = india.cities.find('Varanasi')
+    new_delhi = india.cities.find('New Delhi')
+    f'{round(varanasi.distance_to(new_delhi) / 1000)} km.' 
+
+.. code-block:: text
+
+    '~682 km.'
+
+
+Timezones:
+====================
+
+.. code-block:: python
+
+    globe = Globe(countries_to_load=['MX'])
+    mexico = globe['MX']
+    merida = mexico.cities.find('Merida')
     merida.timezone.key
 
 .. code-block:: text
 
-   'America/Merida'
-
-
-or load by continent:
-
-.. code-block:: python
-
-    from plaincities import Countries
-    countries = Countries(continents_to_load=['AF'])
-
-or load all the cities on the globe!
-
-.. code-block:: python
-
-    from plaincities import Countries
-    countries = Countries(load_all=True)
+    'America/Merida'
 
 
 
@@ -66,10 +77,10 @@ Switching languages:
 
 .. code-block:: python
 
-    from plaincities import Countries
-    countries = Countries(language='zh', countries_to_load=['CN'])
-    china = countries['CN']
-    beijing = china.cities['北京']
+    from plaincities import Globe
+    globe = Globe(language='zh', countries_to_load=['CN'])
+    china = globe['CN']
+    beijing = china.cities.find('北京')
     (china.name, beijing.name, beijing.ascii_name)
 
 .. code-block:: text
@@ -77,11 +88,12 @@ Switching languages:
    ('中国', '北京', 'Beijing')
 
 Suggestions:
+====================
 
 .. code-block:: python
 
-    from plaincities import Countries
-    countries = Countries(countries_to_load=['GR'])
+    from plaincities import Globe
+    globe = Globe(countries_to_load=['GR'])
     greece = countries['GR']
     list(greece.cities.suggest('Tesaloniki', threshold=0.7))
 
@@ -96,8 +108,9 @@ Generating language files
 -------------------------
 
 Default installation supports English, Turkish, French, Spanish, Chinese, Russian and Arabic.
-You can setup additional languages after the installation.
+If you need other languages, you need to download the following files from `geonames website <https://download.geonames.org/export/dump/readme.txt>`_ and put them into the same folder:
 
+    countryInfo.txt, alternateNamesv2.zip, admin1CodesASCII.txt, admin2Codes.txt, cities(N).zip
 
 .. code-block:: python
 
@@ -106,8 +119,8 @@ You can setup additional languages after the installation.
 
 .. code-block:: python
 
-    from plaincities import Countries
-    countries = Countries(countries_to_load=['TH'], path='new_values')
+    from plaincities import Globe
+    globe = Globe(countries_to_load=['TH'], path='new_values')
     thailand = countries['TH']
     thailand.name
 
