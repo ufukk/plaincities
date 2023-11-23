@@ -49,16 +49,14 @@ class PlainCitiesTestCase(unittest.TestCase):
         germany = countries['DE']
         germany.load_cities()
         self.assertIn('Cologne District', germany.states['North Rhine-Westphalia'].districts)
-        self.assertGreater(len(germany.states['North Rhine-Westphalia'].\
-            districts['Cologne District'].cities), 0)
-        koln = germany.states['North Rhine-Westphalia']\
-            .districts['Cologne District'].cities['Cologne']
+        self.assertGreater(len(germany.states['North Rhine-Westphalia'].districts['Cologne District'].cities), 0)
+        koln = germany.states['North Rhine-Westphalia'].districts['Cologne District'].cities.find('Cologne')
         self.assertEqual(koln.name, 'Cologne')
         turkiye = countries['TR']
         turkiye.load_cities()
         self.assertIn('Ankara', turkiye.states)
         self.assertIn('Ankara', turkiye.cities)
-        ankara_city = turkiye.cities['Ankara']
+        ankara_city = turkiye.cities.find('Ankara')
         self.assertEqual(ankara_city.timezone.key, 'Europe/Istanbul')
         iraq = countries['IQ']
         iraq.load_cities()
@@ -70,19 +68,19 @@ class PlainCitiesTestCase(unittest.TestCase):
         countries = Globe(continents_to_load=['AF'])
         self.assertIn('Eastern Cape', countries['ZA'].states)
         countries = Globe(load_all=True)
-        self.assertIn('Bağcılar', countries['TR'].states['Istanbul'].cities)
-        self.assertIn('Bagcilar', countries['TR'].states['Istanbul'].cities)
+        self.assertIn('Bağcılar', countries['TR'].states.find('Istanbul').cities)
+        self.assertIn('Bagcilar', countries['TR'].states.find('Istanbul').cities)
 
     def test_city_properties(self):
         countries = Globe(countries_to_load=['CN', 'RU'])
         china = countries['CN']
-        guangzhou = china.cities['Guangzhou']
-        xining = china.cities['Xining']
+        guangzhou = china.cities.find('Guangzhou')
+        xining = china.cities.find('Xining')
         self.assertLess(guangzhou.latitude, xining.latitude)
         self.assertGreater(guangzhou.longitude, xining.longitude)
         russia = countries['RU']
-        kaliningrad = russia.cities['Kaliningrad']
-        moscow = russia.cities['Moscow']
+        kaliningrad = russia.cities.find('Kaliningrad')
+        moscow = russia.cities.find('Moscow')
         self.assertGreater(moscow.population, 1000000)
         self.assertGreater(moscow.population, kaliningrad.population)
 
@@ -90,8 +88,8 @@ class PlainCitiesTestCase(unittest.TestCase):
         countries = Globe(countries_to_load=['US', 'JP'])
         usa = countries['US']
         japan = countries['JP']
-        ny_time = datetime(2010, 1, 1, 0, 0, 0, tzinfo=usa.cities['New York'].timezone)
-        tokyo_time = datetime(2010, 1, 1, 0, 0, 0, tzinfo=japan.cities['Tokyo'].timezone)
+        ny_time = datetime(2010, 1, 1, 0, 0, 0, tzinfo=usa.cities.find('New York').timezone)
+        tokyo_time = datetime(2010, 1, 1, 0, 0, 0, tzinfo=japan.cities.find('Tokyo').timezone)
         self.assertEqual((tokyo_time - ny_time).total_seconds(), 60 * 60 * -14)
 
     def test_capitals(self):
@@ -113,8 +111,8 @@ class PlainCitiesTestCase(unittest.TestCase):
     def test_filters(self):
         countries = Globe(countries_to_load=['CU', 'TR'])
         cuba = countries['CU']
-        large_cities = cuba.cities.filter(lambda x: x.population > 100000)
-        self.assertIn(cuba.cities['Havana'], large_cities)
+        large_cities = list(cuba.cities.filter(lambda x: x.population > 100000))
+        self.assertIn(cuba.cities.find('Havana'), large_cities)
         turkiye = countries['TR']
         all_cities = list(turkiye.cities.filter(lambda x: x.admin_division == AD.City or x.admin_division == AD.Capital))
         self.assertEqual(len(all_cities), 81)
@@ -136,13 +134,13 @@ class PlainCitiesTestCase(unittest.TestCase):
 
     def test_neighbours(self):
         countries = Globe(language='en', countries_to_load=['DZ', 'US', 'TR'])
-        algeria = countries['DZ']
-        algiers = algeria.cities['Algiers']
         usa = countries['US']
-        turkiye = countries['TR']
-        ankara = turkiye.cities['Ankara']
-        new_york = usa.cities['New York']
-        self.assertEqual(len(usa.nearby_places(new_york, 20 * 1000, 10)), 10)
+        nyc = usa.cities.find('New York')
+        albany = usa.states['New York'].cities.find('Albany')
+        self.assertTrue(nyc.distance_to(albany) > 200 * 1000 and nyc.distance_to(albany) < 300 * 1000)
+        neighbours = usa.cities.filter(lambda x: nyc.distance_to(x) < 240 * 1000 and x.admin_division in [AD.City, AD.SeatOfGovernment])
+        self.assertGreater(len(list(neighbours)), 0)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -4,7 +4,7 @@ from zoneinfo import ZoneInfo
 from difflib import SequenceMatcher
 import os
 from typing import List, Dict, Iterable, Generator, TypeVar, Generic, Callable, Tuple
-from math import asin, sin, cos, radians
+from math import asin, sin, cos, radians, sqrt
 from enum import Enum, StrEnum, auto
 
 __VALUE_PATH__ = os.path.dirname(os.path.abspath(__file__)) + '/_values'
@@ -108,7 +108,7 @@ class Container(Generic[T]):
     def __init__(self, items: Iterable[T]=None) -> None:
         self.__items = items or []
 
-    def __indexes_for(self, name):
+    def _indexes_for(self, name):
         matches = [i for i, x in enumerate(self.items) if x.name == name or x.ascii_name == name or x.alternate_names and name in x.alternate_names]
         return matches
 
@@ -126,15 +126,18 @@ class Container(Generic[T]):
         return self.items.__iter__()
 
     def __contains__(self, key: str) -> bool:
-        matches = self.__indexes_for(key)
+        matches = self._indexes_for(key)
         return len(matches) > 0
 
-    def __getitem__(self, key: str) -> T:
-        matches = self.__indexes_for(key)
-        if len(matches):
-            return self.items[matches[0]]
-        else:
-            raise KeyError(key)
+    def search(self, name):
+        indexes = self._indexes_for(name)
+        return [self.items[i] for i in indexes]
+
+    def find(self, name):
+        try:
+            return self.search(name)[0]
+        except IndexError:
+            return KeyError(name)
 
     def suggest(self, query, threshold=0.5) -> Generator[str, None, None]:
         for item in self.items:
@@ -142,19 +145,27 @@ class Container(Generic[T]):
             if ratio >= threshold:
                 yield item.name
 
-    def filter(self, func: Callable):
-        items = filter(func, self.items)
-        return items
+    def filter(self, func: Callable) -> Generator[T, None, None]:
+        return filter(func, self.items)
+
+class KeyedContainer(Container[T]):
+    
+    def __getitem__(self, key: str):
+        indexes = self._indexes_for(key)
+        if len(indexes) == 1:
+            return self.items[indexes[0]]
+        else:
+            raise KeyError(key)
 
 class State(NamedItem):
 
     def __init__(self, geoid, name, ascii_name, alternate_names=[]) -> None:
         super().__init__(geoid, name, ascii_name, alternate_names)
-        self.__disticts = Container()
+        self.__disticts = KeyedContainer()
         self.__cities = Container()
 
     @property
-    def districts(self) -> Container["District"]:
+    def districts(self) -> KeyedContainer["District"]:
         return self.__disticts
 
     @property
@@ -195,6 +206,12 @@ class City(NamedItem):
         self.altitude = altitude
         self.admin_division = admin_division
 
+    def coordinates(self) -> Tuple[float, float]:
+        return (self.latitude, self.longitude, )
+
+    def distance_to(self, dest: "City"):
+        return haversine_distance(self.latitude, self.longitude, dest.latitude, dest.longitude)
+
 class Country(NamedItem, Container):
 
     def __init__(self, geoid, name, alpha2, alpha3, fips, capital, area_sqm2, population, languages, currency, continent) -> None:
@@ -208,8 +225,8 @@ class Country(NamedItem, Container):
         self.languages = languages
         self.currency = currency
         self.continent: str = continent
-        self.states: Container[State] = None
-        self.districts: Container[District] = None
+        self.states: KeyedContainer[State] = None
+        self.districts: KeyedContainer[District] = None
         self.cities: Container[City] = None
 
     def load_cities(self, language=None, path=None):
@@ -247,32 +264,13 @@ class Country(NamedItem, Container):
                     city.state.cities.append(city)
                 if city.district:
                     city.district.cities.append(city)
-            self.states = Container(list(states.values()))
-            self.districts = Container(list(districts.values()))
+                    if city.district.state:
+                        city.district.state.cities.append(city)
+            self.states = KeyedContainer(list(states.values()))
+            self.districts = KeyedContainer(list(districts.values()))
 
     def __contains__(self, key: str):
         return key in self.states
-
-    def nearby_places(self, city: City, threshold: int, count: int) -> Tuple[City, float]:
-        vertical_cities = sorted(self.cities, key=lambda a: (a.latitude, a.longitude))
-        horizontal_cities = sorted(self.cities, key=lambda a: (a.longitude, a.latitude))
-        vertical_index = vertical_cities.index(city)
-        horizontal_index = horizontal_cities.index(city)
-        vertical_start = vertical_index - count if vertical_index > count else 0
-        vertical_end = vertical_index + count if len(vertical_cities) > vertical_index + count else len(vertical_cities) - vertical_index
-        horizontal_start = horizontal_index - count if horizontal_index > count else 0
-        horizontal_end = horizontal_index + count if len(horizontal_cities) > horizontal_index + count else len(horizontal_index) - vertical_index
-        results = []
-        max_distance = threshold + 1
-        items = set(vertical_cities[vertical_start:vertical_end] + horizontal_cities[horizontal_start:horizontal_end])
-        items.remove(city)
-        for item in items:
-            distance = haversine_distance(item.latitude, item.longitude, city.latitude, city.longitude)
-            if distance < threshold and (len(results) < count or distance < max_distance):
-                results.append((item, distance, ))
-                max_distance = max([x[1] for x in results])
-        results = sorted(results, key=lambda x: x[1])
-        return results[0:count]
 
 class Globe(Container):
     
