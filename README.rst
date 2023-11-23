@@ -49,7 +49,7 @@ Coordinates:
     india = globe['IN']
     varanasi = india.cities.find('Varanasi')
     new_delhi = india.cities.find('New Delhi')
-    f'{round(varanasi.distance_to(new_delhi) / 1000)} km.' 
+    f'~{round(varanasi.distance_to(new_delhi) / 1000)} km.' 
 
 .. code-block:: text
 
@@ -115,7 +115,7 @@ If you need other languages, you need to download the following files from the `
 .. code-block:: python
 
     from plaincities import generator
-    Generator('data', 'new_values').generate_values('cities15000.txt', ['ko'], 'ko')
+    Generator('data', 'new_values').generate_values('cities15000.txt', languages=['ko'], default_language='ko')
 
 .. code-block:: python
 
