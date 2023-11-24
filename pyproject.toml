@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "plaincities"
-version = "0.3"
+version = "0.3.1"
 description = "plaincities is a library of places in many languages."
 authors = ["ufuk k. <ufuk.kocolu@proton.me>"]
 license = "LICENSE"
