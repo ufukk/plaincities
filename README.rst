@@ -28,6 +28,32 @@ Load options:
     india = globe['IN']
     india.load_cities()
 
+Hierarchy & Administrative Divisions:
+========================================
+
+.. code-block:: python
+
+    from plaincities import Globe
+    globe = Globe(countries_to_load=['MY'])
+    malaysia = globe['MY']
+    medium_cities = list(malaysia.cities.filter(lambda x: x.population > 100000 and x.population < 1000000 and x.district is not None))['/'.join(
+        [c.state.name, c.district.name, c.name, c.admin_division.name])
+    for c in medium_cities][0:10]
+
+.. code-block:: text
+
+    ['Johor/Daerah Batu Pahat/Batu Pahat/Place',
+ 'Johor/Daerah Johor Baharu/Kampung Pasir Gudang Baru/Place',
+ 'Johor/Daerah Johor Baharu/Skudai/Section',
+ 'Johor/Daerah Johor Baharu/Johor Bahru/City',
+ 'Johor/Daerah Keluang/Kluang/Place',
+ 'Johor/Daerah Muar/Muar town/Place',
+ 'Selangor/Petaling/Shah Alam/Place',
+ 'Selangor/Klang/Klang/Place',
+ 'Sabah/Kota Kinabalu/Kota Kinabalu/City',
+ 'Sabah/Lahad Datu/Lahad Datu/Place']
+
+
 Coordinates:
 ====================
 

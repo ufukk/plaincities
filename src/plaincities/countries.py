@@ -265,6 +265,7 @@ class Country(NamedItem, Container):
                 if city.district:
                     city.district.cities.append(city)
                     if city.district.state:
+                        city.state = city.district.state
                         city.district.state.cities.append(city)
             self.states = KeyedContainer(list(states.values()))
             self.districts = KeyedContainer(list(districts.values()))
