@@ -1,5 +1,5 @@
 
-plaincities is a library of places in many languages. It is based on `geonames <https://geonames.org/>`_ database.
+plaincities is a library of places in many languages. It is based on `geonames <https://www.geonames.org/>`_ database.
 
 
 Installation
